@@ -8,7 +8,7 @@
 const BUILD = 'dev';                                   // stamped per deploy by build/make-deploy.mjs
 const NAME = 'snak-v-' + BUILD;
 const OURS = /^snak-v-/;
-const SHELL = ['./', 'index.html', 'style.css', 'fonts/fonts.css', 'js/app.js', 'js/ui.js', 'js/store.js', 'js/sched.js', 'js/voice.js', 'js/audio.js', 'js/vendor/ts-fsrs.mjs', 'data/deck.json', 'icons/icon-192.png'];
+const SHELL = ['./', 'index.html', 'style.css', 'fonts/fonts.css', 'js/app.js', 'js/ui.js', 'js/store.js', 'js/sched.js', 'js/voice.js', 'js/audio.js', 'js/art.js', 'js/vendor/ts-fsrs.mjs', 'data/deck.json', 'icons/icon-192.png'];
 
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(NAME).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {

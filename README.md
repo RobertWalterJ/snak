@@ -20,6 +20,18 @@ Close the black window to stop it. Or: `npm run dev`.
 - Three palettes, each light and dark; large-text option; no timers anywhere.
 - Backup and restore of progress as a file. Works offline after the first load.
 
+## Design
+
+Calm Nordic editorial: warm or cool paper, one strong accent, soft shapes, big quiet type. Atkinson Hyperlegible for the
+interface, Fraunces for the language itself, titles and numbers. A hero with a progress ring and a drawing that suits the
+app (ripples of sound for Snak, ridges and an aurora band for Saga); a frosted floating tab bar (a side rail on a wide
+screen); a focused round screen with a bottom dock that holds the answer and Continue within thumb reach; colour swatches,
+three palettes per app, each light and dark. Right and wrong are always an icon and a word as well as colour. Motion is small
+and switched off when the phone asks for less. Text is left-aligned, 1.6 line height, slightly open letter spacing. Every
+palette is contrast-checked (`npm run check`, build/audit-colour.mjs, now 27 pairs per palette). First launch shows a
+welcome with a "start from the beginning" or "I already know some" choice. On localhost the offline worker is removed so a
+changed file always loads.
+
 ## Notes: culture, history and language
 
 The **Notes** tab has 14 short readings (culture, history, language). Each note is built from claims: every sentence the

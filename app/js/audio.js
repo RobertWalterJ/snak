@@ -23,7 +23,7 @@ export function credit(kind, key, prefix) {
   const c = clip(kind, key);
   if (!c) return hasVoice(prefix) ? 'Your phone’s voice (a machine).' : '';
   if (c.k === 'h') return `Recording by ${c.by} (${c.src}${c.lic ? ', ' + c.lic : ''}).`;
-  return (man.voice?.p || 'Computer voice') + '.';
+  return 'Computer voice (Piper).';                    // the full credit and licence of the voice are in About
 }
 export const isHuman = (kind, key) => clip(kind, key)?.k === 'h';
 

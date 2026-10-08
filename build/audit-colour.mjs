@@ -18,12 +18,18 @@ const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p);
 const themes = [...css.matchAll(/\[data-theme=(\w+)\]\[data-eff=(\w+)\]\s*\{([^}]*)\}/g)];
 let bad = 0;
 for (const [, name, eff, body] of themes) {
-  const v = Object.fromEntries([...body.matchAll(/--(\w+):\s*(#[0-9A-Fa-f]{6})/g)].map((m) => [m[1], m[2]]));
+  const v = Object.fromEntries([...body.matchAll(/--([A-Za-z0-9-]+):\s*(#[0-9A-Fa-f]{6})/g)].map((m) => [m[1], m[2]]));
   const checks = [
-    ['text on page', v.tx, v.bg, 4.5], ['text on card', v.tx, v.sf, 4.5], ['muted on page', v.mu, v.bg, 4.5], ['muted on card', v.mu, v.sf, 4.5],
-    ['muted on tint', v.mu, v.tint, 4.5], ['text on tint', v.tx, v.tint, 4.5],
-    ['accent on page', v.ac, v.bg, 4.5], ['accent on card', v.ac, v.sf, 4.5], ['button text on accent', v.on, v.ac, 4.5],
-    ['good on card', v.gd, v.sf, 4.5], ['bad on card', v.bd, v.sf, 4.5], ['good on tint', v.gd, v.tint, 4.5],
+    ['text on page', v.tx, v.bg, 4.5], ['text on card', v.tx, v.sf, 4.5], ['text on raised card', v.tx, v.sf2, 4.5],
+    ['muted on page', v.mu, v.bg, 4.5], ['muted on card', v.mu, v.sf, 4.5], ['muted on raised card', v.mu, v.sf2, 4.5], ['muted on band', v.mu, v.bg2, 4.5],
+    ['text on tint', v.tx, v.tint, 4.5], ['muted on tint', v.mu, v.tint, 4.5],
+    ['accent on page', v.ac, v.bg, 4.5], ['accent on card', v.ac, v.sf, 4.5], ['accent on tint', v.ac, v.tint, 4.5], ['accent on band', v.ac, v.bg2, 4.5],
+    ['button text on accent', v.on, v.ac, 4.5],
+    ['text on hero (start)', v.tx, v['hero-a'], 4.5], ['text on hero (end)', v.tx, v['hero-b'], 4.5], ['muted on hero (start)', v.mu, v['hero-a'], 4.5], ['muted on hero (end)', v.mu, v['hero-b'], 4.5],
+    ['accent on hero (start)', v.ac, v['hero-a'], 3], ['second accent on page (art, not text)', v.ac2, v.bg, 3],
+    ['right on card', v.gd, v.sf, 4.5], ['right on its wash', v.gd, v.gdbg, 4.5], ['text on right wash', v.tx, v.gdbg, 4.5],
+    ['wrong on card', v.bd, v.sf, 4.5], ['wrong on its wash', v.bd, v.bdbg, 4.5], ['text on wrong wash', v.tx, v.bdbg, 4.5],
+    ['right and wrong badges differ in lightness', v.gd, v.bd, 1.0],
   ];
   for (const [what, a, b, min] of checks) { const r = ratio(a, b); if (r < min) { bad++; console.error(`FAIL ${name}/${eff}: ${what} is ${r.toFixed(2)}:1 (need ${min})`); } }
 }
