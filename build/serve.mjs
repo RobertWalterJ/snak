@@ -1,6 +1,6 @@
 // A plain static server, so the browser can run the real app (service worker and all).
 //
-//   node build/serve.mjs [--port N]     serves app/ on http://localhost:8911 (Danish) or :8912 (Icelandic)
+//   node build/serve.mjs [--docs] [--port N]     serves app/ (or docs/ with --docs) on http://localhost:8911 (Danish) or :8912 (Icelandic)
 
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -11,11 +11,12 @@ const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).href);
 const arg = process.argv.indexOf('--port');
 const PORT = arg > 0 ? Number(process.argv[arg + 1]) : (LANG.id === 'da' ? 8911 : 8912);
-const APP = join(ROOT, 'app');
+const DOCS = process.argv.includes('--docs');            // --docs serves the built site, as GitHub Pages will
+const APP = join(ROOT, DOCS ? 'docs' : 'app');
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.woff2': 'font/woff2',
   '.json': 'application/json; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml',
-  '.webmanifest': 'application/manifest+json',
+  '.webmanifest': 'application/manifest+json', '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg',
 };
 
 createServer(async (req, res) => {
@@ -29,4 +30,4 @@ createServer(async (req, res) => {
     res.writeHead(404, { 'content-type': 'text/plain' });
     res.end('not here');
   }
-}).listen(PORT, () => console.log(`${LANG.app}: http://localhost:${PORT}/`));
+}).listen(PORT, () => console.log(`${LANG.app}${DOCS ? ' (built site)' : ''}: http://localhost:${PORT}/`));

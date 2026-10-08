@@ -1,0 +1,69 @@
+{"kind":"language","title":"Stød","revid":1354254124,"timestamp":"2026-05-15T07:15:42Z","url":"https://en.wikipedia.org/w/index.php?title=St%C3%B8d&oldid=1354254124","license":"CC BY-SA 4.0, Wikipedia contributors"}
+Stød (Danish pronunciation: [ˈstøð], also occasionally spelled stod in English) is a suprasegmental unit of Danish phonology (represented in non-standard IPA as ⟨◌ˀ⟩), which in its most common form is a kind of creaky voice (laryngealization), but it may also be realized as a glottal stop, especially in emphatic pronunciation. Some dialects of Southern Danish realize stød in a way that is more similar to the tonal word accents of Norwegian and Swedish. In much of Zealand it is regularly realized as reminiscent of a glottal stop. A probably unrelated glottal stop, with quite different distribution rules, occurs in Western Jutland and is known as the vestjysk stød ('West Jutland stød'). The noun stød itself does not have a stød.
+
+
+== Phonetics ==
+The stød has sometimes been described as a glottal stop, but acoustic analyses have shown that there is seldom a full stop of the airflow involved in its production. Rather it is a form of laryngealization or creaky voice, that affects the phonation of a syllable by dividing it into two phases. The first phase has a relatively high intensity and a high pitch (measured as F0), whereas the second phase sees a drop in intensity and pitch.
+
+
+== Phonology ==
+
+Danish linguists such as Eli Fischer-Jørgensen, Nina Grønnum and Hans Basbøll have generally considered stød to be a suprasegmental phenomenon related to phonation and accent. Basbøll defines it as a "laryngeal syllable rhyme prosody".
+The phonology of the stød has been widely studied, and several different analyses have been elaborated to account for it. Most of the time the presence of stød in a word is predictable based on information about the syllable structure of the word. But there are minimal pairs where the presence or absence of stød determines meaning:
+
+
+=== Stød-basis and alternations ===
+Two-syllable words with accent on the first syllable do not take stød, nor do closed monosyllables ending in a non-sonorant. In Standard Danish, stød is mainly found in words that have certain phonological patterns, namely those that have a heavy stressed syllable, with a coda of a sonorant or semivowel (i.e. words ending in vowel + /r, j, v/) or one of the consonant phonemes /m, n, ŋ, l, ð/. This phonological structure is called "stød-basis" (or "stødbasis" in the literature). In the stød-basis model, stød is possible only on syllables that have this basis, but secondary rules need to be formulated to account for which syllables with stød-basis actually carry the stød.
+Some words alternate morphologically with stød-carrying and stød-less forms, for example gul [ˈkuˀl] 'yellow (singular)' and gule [ˈkuːlə] 'yellow (plural)'. Grønnum considers stød to be non-phonemic in monosyllables with long vowels (she analyzes the phonemic structure of the word lim [ˈliˀm] 'glue' as /ˈliːm/), whereas Basbøll considers it phonemic also in this environment (analyzing it instead as /ˈliːˀm/, contrasting with the structure of team /ˈtiːm/ 'team').
+
+
+=== Tonal analysis ===
+Following an earlier suggestion by Ito and Mester, Riad (2003) analyzes stød as a surface manifestation of an underlying high–low tone pattern across two syllables. Riad traces the history of stød to a tonal system similar to that found in the contemporary Swedish dialects of Mälardalen, particularly that of Eskilstuna. The argument is based both on the phonetic similarity between the stød, characterized by a sharp drop in the F0 formant, and the same phenomenon found in some tonal systems, and also on the historical fact that tonal accents are considered to have historically existed prior to the stød system. A 2013 study by Grønnum, Vazquez-Larruscaín and Basbøll, however, found that the tonal hypothesis was unable to successfully account for the distribution of stød. The tonal analysis has also been critiqued by Gress-Wright (2008), who prefers a model similar to Basbøll's.
+
+
+=== Basbøll's analysis ===
+Basbøll (2005) gives an analysis of stød based on prosody and syllable weight measured in terms of morae. He analyzes Danish as having two kinds of syllables, monomoraic and bimoraic syllables. Unstressed syllables, syllables with short vowels, and non-sonorant codas are considered monomoraic, whereas stressed syllables with long vowels, or with short vowels followed by coda sonorants are considered bimoraic. In Basbøll's analysis, stød marks the beginning of the second mora in ultimate and antepenultimate syllables, although he recognizes that phonetically the situation is more complex as phonetic experiments have shown that the effects of stød occur across the entire syllable. Stød thus can only be found in "heavy" bimoraic rhyme syllables, but never in "light" (monomoraic) syllables. In this analysis, the notion of stød-basis is unnecessary, and the only thing that needs to be accounted for are those cases where syllables that ought to carry stød according to the model, in fact do not, e.g. words like øl, 'beer', and ven, 'friend'. Basbøll accounts for these by positing that the final sonorants in these cases are extraprosodic, meaning that they are simply not counting towards the moraic weight of the syllable to which they belong. This accounts for the resurfacing of stød when such words are followed by a syllabic consonant such as the definite suffix (e.g. vennen [ˈvenˀn̩], 'the friend' ), but not when they are followed by a syllable with a vowel (e.g. venner [ˈvenɐ], 'friends'). Another set of exceptions are assumed to be lexically coded as lacking stød.
+
+
+== History ==
+
+Danish must have had stød already in the 16th century as a speech against the Danes by a Swedish bishop, Hemming Gadh, quoted by Johannes Magnus, mentions a particular guttural cough associated with Danish. Generally it has been considered that it must have arisen sometime in the late Middle Ages, perhaps around 1300. But some scholars have suggested that it goes back to the original population groups and that the line between stød and non-stød dialects represent an ancient invasion from the south.
+Stød was first mentioned in the 1743 second treatise on orthography of Jens Pedersen Høysgaard, where he described it as stop of the breath caused by the closing of the pharynx. He was also the one to propose the term stødetone, "thrust-tone", later abbreviated to stød.
+The historical origin of stød is a matter of debate, but it is systematically related to the word accents of Swedish and Norwegian: It has been proposed that original Old Norse monosyllables (not counting the definite article, which was still a separate word) received the stød, while words of two or more syllables did not.  This would explain why hund [ˈhunˀ] ('dog'), hunden [ˈhunˀn̩] ('the dog') and finger [ˈfe̝ŋˀɐ] ('finger'; Old Norse fingr in one syllable) have the stød in modern Danish, while hunde [ˈhunə] ('dogs'), hundene [ˈhunn̩ə] ('the dogs') and fingre [ˈfe̝ŋʁɐ] ('fingers') do not.
+It has also been proposed that it originated as a phonetic consequence of the original devoicing of Old Norse syllable-final voiced consonants in some dialect areas. This phonetic laryngealization was then phonemicized as the Scandinavian languages restructured nominal morphology introducing the definite suffixes.
+
+
+== Dialectal variation ==
+
+Standard Danish follows the rule for stød laid out above, but there is dialectal variation. There are four main regional variants for the realization of stød:
+
+In Southern Jutlandic, Southernmost Funen, Southern Langeland, and Ærø, there is no stød but a pitch accent.
+South of a line (Danish: Stødgrænsen, 'Stød-border') that goes through central South Jutland and crosses Southern Funen and central Langeland and north of Lolland-Falster, Møn, Southern Zealand, and Bornholm, there is neither stød nor pitch accent.
+In most of Jutland and on Zealand, there is stød.
+In Zealandic traditional dialects and regional language there are often more stød occurrences than in the standard language. In Zealand, the stød line divides Southern Zealand (without stød), an area that used to be directly under the Crown, from the rest of Zealand, which used to be the property of various noble estates.
+In the dialects with pitch accent, such as the South Jutlandic (Synnejysk) of Als, a low-level tone and a high-level tone  correspond to stød and non-stød in Standard Danish:
+
+On Zealand, some traditional dialects have a phenomenon called short vowel stød (kortvokalstød); some monosyllabic words with a short vowel and a coda consonant cluster take a stød if they are followed by the definite suffix: præst [ˈpʰʁæst] 'priest', but præsten [ˈpʰʁæˀstn̩] 'the priest'.
+
+
+=== Western Jutlandic stød ===
+In Western Jutland, a second stød, more like a preconsonantal glottal stop, is employed in addition to the Standard Danish stød.
+The Western Jutlandic stød is called Vestjysk stød or "V-stød" in literature. It occurs in different environments, particularly after stressed vowels before final consonant clusters that arise by the elision of final unstressed vowels. For example, the word trække 'to pull', which is [ˈtsʰʁækə] in Standard Danish, in Western Jutlandic is [ˈtsʰʁæʔk], and the present tense form trækker, in Standard Danish [ˈtsʰʁækɐ], in Western Jutlandic is [ˈtsʰʁæʔkə]. Some scholars have proposed that the Vestjysk stød is ancient, but others consider it to be a more recent innovation.
+
+
+== Similar phenomena in other languages ==
+A similar phenomenon, known as "broken tone" (Latvian: lauztā intonācija, Latgalian: lauztuo intonaceja) exists in several other languages spoken around the Baltic Sea: the Baltic languages Latvian, Latgalian, and the Samogitian dialect of Lithuanian, as well as the Finnic language Livonian.
+In Vietnamese, two out of six tones involve glottalization.
+The Scottish Gaelic dialects of Argyll, particularly those of Islay, Jura, Gigha, Colonsay and Arran, feature a glottalization phenomenon akin to stød in intervocalic contexts such as between two short vowels, whether following directly (e.g. gobha "blacksmith" [ˈɡ̊oʔo]) or separated by a single phonetic consonant (e.g. baile "village, town" [ˈb̥aˀḻʲɪ]).
+
+
+== See also ==
+Danish phonology
+Vocal fry register
+Creaky voice
+
+
+== References ==
+
+
+== Sources ==

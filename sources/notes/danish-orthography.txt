@@ -1,0 +1,94 @@
+{"kind":"language","title":"Danish orthography","revid":1365454316,"timestamp":"2026-07-22T14:31:55Z","url":"https://en.wikipedia.org/w/index.php?title=Danish_orthography&oldid=1365454316","license":"CC BY-SA 4.0, Wikipedia contributors"}
+Danish orthography is the system and norms used for writing the Danish language, including spelling and punctuation.
+Officially, the norms are set by the Danish language council through the publication of Retskrivningsordbogen.
+Danish currently uses a 29-letter Latin-script alphabet with three additional letters: ⟨æ⟩, ⟨ø⟩ and ⟨å⟩. It is identical to the Norwegian alphabet.
+The orthography is characterized by a low degree of correspondence between writing and pronunciation.
+
+
+== History ==
+There were spelling reforms in 1872, 1889 (with some changes in 1892), and 1948. These spelling reforms were based in the decisions of the Nordic spelling conference of 1869, whose goal was to abolish spellings that are justified by neither phonetics nor etymology and to bring Danish and Swedish orthographies closer.
+The reform of 1872 replaced the letter ⟨e⟩ by ⟨æ⟩ in some words (Eg> Æg, fegte> fægte, Hjelm> Hjælm; however, for words with ⟨je⟩ the change was reverted in 1889), abolished the distinction of the homophonous words Thing and Ting (however, the distinction between thi and ti was retained), replaced the letter ⟨q⟩ by ⟨k⟩ (Qvinde>Kvinde), deleted the silent ⟨e⟩ after vowels (faae>faa), abolished doubling of vowels to signify vowel length (Steen>Sten), replaced ⟨i⟩ by ⟨j⟩ after vowels (Vei>Vej), deleted the letter ⟨d⟩ in the combinations ⟨dsk⟩ and ⟨nds⟩ except in morpheme borders (Vædske>Væske, Prinds>Prins, but islandsk), and abolished doubling of consonants before other consonants (sikkre>sikre). In some cases, spelling of loanwords was simplified, but in general the question of spelling loanwords was largely left undecided.
+In 1889, ⟨x⟩ was abolished from native words and most loanwords: Oxe>Okse, Exempel>Eksempel. The letter ⟨j⟩ was deleted from the combinations gje, gjæ, gjø, kje, kjæ, kjø: Kjøkken>Køkken. This change reflected a phonological shift in the spoken language towards dropping the j in these consonant clusters, e.g. Kjøbenhavn>København (Copenhagen). Additionally, spelling of loanwords was standardized. In some cases, simplified spellings were adopted (⟨c⟩ sounded ⟨k⟩ mostly becomes ⟨k⟩; ⟨ch, ph, rh, th⟩ in words of Greek origin are replaced by ⟨k, f, r, t⟩), but in many cases original spellings were retained.
+Danish formerly used both ⟨ø⟩ (in Fraktur) and ⟨ö⟩ (in Antiqua), though it was suggested to use ⟨ø⟩ for /ø/ and ⟨ö⟩ for /œ/, which was also sometimes employed. The distinction between ⟨ø⟩ and ⟨ö⟩ was optionally allowed in 1872, recommended in 1889, but rejected in 1892, although the orthographic dictionaries continued to use ⟨ø⟩ and ⟨ö⟩ (collated as if they were the same letter) until 1918 and the book Folkehöjskolens Sangbog continued to use ⟨ø⟩ and ⟨ö⟩ in its editions as late as 1962.
+Earlier instead of ⟨aa⟩, ⟨å⟩ or a ligature of two ⟨a⟩ was also used.
+In 1948 ⟨å⟩ was re-introduced or officially introduced in Danish, replacing ⟨aa⟩. The letter then came from the Swedish alphabet, where it has been in official use since the 18th century. The initial proposal was to place ⟨å⟩ first in the Danish alphabet, before ⟨a⟩. Its place as the last letter of the alphabet, as in Norwegian, was decided in 1955. The former digraph ⟨aa⟩ still occurs in many personal names, e.g. Søren Aabye Kierkegaard as opposed to the would-be modern spelling Søren Åby Kirkegård, as well as in Danish geographical names. However, in geographical names, ⟨å⟩ is allowed as an alternative spelling: Aabenraa or Åbenrå, Aalborg or Ålborg, Aarhus or Århus. ⟨aa⟩ remains in use as a transliteration, if the letter is not available for technical reasons. ⟨aa⟩ is treated like ⟨å⟩ in alphabetical sorting, not like two adjacent ⟨a⟩, meaning that while ⟨a⟩ is the first letter of the alphabet, ⟨aa⟩ is the last.
+All nouns in Danish used to be capitalized, as in German. The reform of 1948 abolished the capitalization of all nouns.
+The reform of 1948 also changed the spelling of past tense forms of modal verbs (kunde, skulde, vilde): now they are spelled kunne, skulle, ville, the same as the infinitives of those verbs.
+
+
+== Alphabet ==
+
+The Danish alphabet is based upon the Latin alphabet and has consisted of the following 29 letters since 1980 when ⟨w⟩ was separated from ⟨v⟩.
+
+/p, t, k/, /pʰ, tsʰ, kʰ/ and /ʁ/ are often transcribed with ⟨b, d, ɡ⟩, ⟨p, t, k⟩ and ⟨r⟩ even though the first set is voiceless, the second one is aspirated and the rhotic is uvular, not alveolar.
+In monomorphematic words, vowels are usually short before two or more consonants + ⟨e⟩.
+Vowels are usually long before a single consonant + ⟨e⟩.
+In two consecutive vowels the stressed vowel is always long and the unstressed is always short.
+The letters ⟨c, q, w, x, z⟩ are not used in the spelling of native words. Therefore, the phonemic interpretation of letters in loanwords depends on the donating language. However, Danish tends to preserve the original spelling of loanwords. In particular, a ⟨c⟩ that represents /s/ is almost never transliterated to ⟨s⟩ in Danish, as would most often happen in Norwegian. Many words originally derived from Latin roots retain ⟨c⟩ in their Danish spelling, for example Norwegian sentrum vs Danish centrum. However, the letter ⟨c⟩ representing /kʰ/ is mostly normalized to ⟨k⟩. The letter ⟨q⟩ is used in a few loanwords like quiz (from English), but ⟨qu⟩ is normally replaced by ⟨kv⟩ in words from Latin (e.g. kvadrat) and by ⟨k⟩ in words from French (e.g. karantæne). ⟨x⟩ is normally replaced by ⟨ks⟩ in words from Latin, Greek, or French, e.g. eksempel, maksimal, tekst, heksagon, seksuel; but ⟨x⟩ is retained: 1) at the beginning of words of Greek origin, where it sounds /s/, e.g. xylograf, xylofon; 2) before ⟨c⟩ in words of Latin origin, e.g. excellent, excentrisk; 3) in chemical terms, e.g. oxalsyre, oxygen; 4) in loanwords from English, e.g. exitpoll, foxterrier, maxi, sex, taxi; 5) at the end of French loanwords, where it is silent, e.g. jaloux [ɕæˈlu]. The verb exe/ekse, derived from the name of the letter ⟨x⟩ itself, can be spelled either way. The letter ⟨x⟩ is also used instead of eks- in abbreviations: fx (for eksempel, also written f. eks.), hhx (højere handelseksamen), htx (højere teknisk eksamen).
+The "foreign" letters also sometimes appear in the spelling of otherwise-indigenous family names. For example, many of the Danish families that use the surname Skov (literally: "Woods") spell it Schou. Also ⟨x⟩ has been restored in some geographical names: Nexø, Gladsaxe, Faxe.
+The difference between the Dano-Norwegian and the Swedish alphabet is that Swedish uses ⟨ä⟩ instead of ⟨æ⟩, and ⟨ö⟩ instead of ⟨ø⟩ — similar to German. Also, the collating order for these three letters is different: Å, Ä, Ö.
+In current Danish, ⟨w⟩ is recognized as a separate  letter from ⟨v⟩. The transition was made in 1980; before that, ⟨w⟩ was considered to be a variation of ⟨v⟩ and words using it were alphabetized accordingly (e.g.: "Wales, Vallø, Washington, Wedellsborg, Vendsyssel"). The Danish version of the alphabet song still states that the alphabet has 28 letters; the last line reads otte-og-tyve skal der stå, i.e. "that makes twenty-eight". However, today the letter ⟨w⟩ is considered an official letter.
+
+
+== Diacritics ==
+Standard Danish orthography has no compulsory diacritics, but allows the use of an acute accent for disambiguation, and some words, such as allé 'avenue' or idé 'idea', are listed in the spelling dictionary both with and without the accent. An accent on ⟨e⟩ can be used to mark a stressed syllable in one of a pair of homographs that have different stresses, for example en dreng (a boy) versus én dreng (one boy), i.e. to disambiguate the use of en/et as indefinite article) and én/ét as the numeral 'one'. Any vowel (though not recommended on ⟨å⟩) may be written with an accent to indicate stress or emphasis on a word, either to clarify the meaning of the sentence, the form of a word or to ease the reading otherwise. For example: jeg stód op ("I was standing"), versus jeg stod óp ("I got out of bed"); kopiér ("copy", imperative of verb), versus kopier ("copies", plural of noun). Most often, however, such distinctions are made using typographical emphasis (italics, underlining) or simply left to the reader to infer from the context, and the use of accents in such cases may appear dated.
+The current Danish official spelling dictionary does not use diacritics other than ⟨é⟩ in loanwords: facade [faˈsæːðə], jalapeno [χɑlɑˈpɛnjo, jalaˈpɛnjo], zloty [ˈslʌti]; in the spelling rules, it is stated that foreign letters and diacritics may occur in proper names and in words and texts quoted from other languages. The grave accent may occur on ⟨a⟩, i.e. ⟨à⟩, in a restricted number of words and formulations of French origin, such as à la carte and ris à l'amande. These spellings were part of the Retskrivningsordbog until 1986, when they were replaced by a la carte and risalamande. Other diacritics such as the circumflex, diaeresis and tilde are only found on words from other languages that use them.
+
+
+== Principles ==
+The Danish Language Council makes use of two overall principles when deciding the spelling norms: the principle of language use (sprogbrugsprincippet) and the principle of tradition (traditionsprincippet). These principles are established by ministerial deed.
+The principle of tradition states that spelling, generally, should not change. This can lead to spellings that do not match the pronunciation. Secondarily, the principle means that loanwords should be adapted to existing Danish spelling norms, e.g. based on how earlier loanwords have been adapted. This includes the lack of adaption, which is common for English loanwords.
+The principle of language use states that the norm should be set on the basis of the written practice among "good and certain" language users. A deviation from existing norms can thus become a norm (or replace an earlier norm) if enough exemplary writers make use of it, thus breaking the principle of tradition.
+Who constitutes a "good and certain" (god og sikker) language user is widely discussed,
+but usually includes people who work professionally with language or communication in some way.
+
+
+== Spelling-to-sound correspondence ==
+
+The following tables list graphemes used in Danish and sounds they represent.
+
+
+=== Vowels ===
+
+
+=== Consonants ===
+
+
+== Computing standards ==
+
+In computing, several different coding standards have existed for this alphabet:
+
+DS 2089, later established in international standard ISO 646
+IBM PC code page 865
+ISO 8859-1
+Unicode
+
+
+== See also ==
+Comparison of Danish, Norwegian and Swedish § Writing system
+Comparison of Danish, Norwegian and Swedish § Pronunciation and sound system
+Danish braille
+Danish phonology
+Icelandic orthography
+Futhark, the Germanic runes used formerly
+Spelling alphabets
+Swedish alphabet
+
+
+== References ==
+
+
+== Further reading ==
+Becker-Christensen, Christian (2021). Dansk Retskrivning: Bogstav – Lyd – Bogstav. En grafemisk beskrivelse af dansk ortografi [Danish Orthography: Letter – Sound – Letter. A graphemic description of Danish orthography] (in Danish). Odense: Syddansk Universitetsforlag.
+
+
+== External links ==
+
+Type Danish characters online
+Reform proposals of the Nordic spelling conference of 1869 (in Danish)
+1889 spelling reform (in Danish)
+1948 spelling reform (in Danish)
+Spelling-sound correspondence analyser (in Danish)
+Current orthographic rules (in Danish)
+Spelling of loanwords (in Danish)
+Danish spelling reforms (in Danish)

@@ -19,7 +19,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).href);
 const deck = JSON.parse(readFileSync(join(ROOT, 'app', 'data', 'deck.json'), 'utf8'));
-const UA = `${LANG.app}/0.1 (a personal language-learning app; wjster@gmail.com)`;
+const UA = `${LANG.app}/0.1 (a personal language-learning app; https://github.com/RobertWalterJ/snak)`;
 const AUDIO_EXT = /\.(wav|ogg|oga|mp3|flac)$/i;
 const wordIndex = new Map(deck.words.map((w, i) => [w.w.toLowerCase(), i]));
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

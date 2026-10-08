@@ -22,7 +22,7 @@ mkdirSync(DIR, { recursive: true });
 // recordings by real people go in their own file; the computer-voice generator merges it into data/audio.json
 const MAN = join(ROOT, 'app', 'data', 'audio-human.json');
 const man = { w: {}, s: {} };
-const UA = `${LANG.app}/0.1 (a personal language-learning app; wjster@gmail.com)`;
+const UA = `${LANG.app}/0.1 (a personal language-learning app; https://github.com/RobertWalterJ/snak)`;
 export const hash = (t) => createHash('md5').update(t.toLowerCase()).digest('hex').slice(0, 10);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

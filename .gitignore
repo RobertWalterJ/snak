@@ -1,4 +1,9 @@
 node_modules/
-sources/
+sources/*
+!sources/notes/
 corpus/
 app/audio/
+build/_*
+build/*.log
+*.log
+.DS_Store

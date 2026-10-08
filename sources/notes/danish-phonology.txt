@@ -1,0 +1,147 @@
+{"kind":"language","title":"Danish phonology","revid":1377864564,"timestamp":"2026-10-01T16:25:27Z","url":"https://en.wikipedia.org/w/index.php?title=Danish_phonology&oldid=1377864564","license":"CC BY-SA 4.0, Wikipedia contributors"}
+The phonology of Danish is similar to that of the other closely related Scandinavian languages, Swedish and Norwegian, but it also has distinct features setting it apart. For example, Danish has a suprasegmental feature known as stød which is a kind of laryngeal phonation that is used phonemically. It also exhibits extensive lenition of plosives, which is noticeably more common than in the neighboring languages. Because of these and a few other features, spoken Danish can be challenging for Norwegians and Swedes to understand without training, although they can easily read written Danish.
+
+
+== Consonants ==
+Danish has at least 17 consonant phonemes:
+
+/p, t, k, h/ occur only syllable-initially and [ŋ, ð, w] only syllable-finally. [ɕ] is phonemically /sj/ and [w] is the syllable-final allophone of /v/.
+[w] also occurs syllable-initially in English loans, along with [ɹ], but syllable-initial [w] is in free variation with [v] and these are not considered part of the phonological inventory of Danish.
+/ŋ/ occurs only after short vowels.
+It stems morphophonologically, in native words, from |nɡ| or |n| preceding |k| and, in French loans, from a distinct |ŋ|.
+Beyond morphological boundaries, [ŋ] may also appear as the result of an optional assimilation of /n/ before /k, ɡ/, e.g. han kommer [hæn ˈkʰʌmˀɐ] or [hæŋ ˈkʰʌmˀɐ] 'he comes'.
+/n, t, d, s, l/ are apical alveolar [n̺, t̺s̺ʰ, t̺, s̺, l̺], although some speakers realize /s/ dentally ([s̪]).
+/p, t, k/ are voiceless aspirated, with /t/ also affricated: [pʰ, tsʰ, kʰ].
+In some varieties of standard Danish (but not the Copenhagen dialect), /t/ is just aspirated, without the affrication.
+/b, d, ɡ/ are voiceless unaspirated [p, t, k].
+In syllable codas, weak, partial voicing may accompany them especially when between voiced sounds. In spontaneous speech recorded in 1996, 38% of intervocalic /b, d, ɡ/ were voiced. In that environment, /d/ may be realized as a flap [ɾ], as in nordisk [ˈnoɐ̯ɾisk] 'Nordic'.
+Utterance-final /b, d, ɡ/ may be realized as [pʰ, t(s)ʰ, kʰ], particularly in distinct speech.
+The plosives /p, t, k, b, d, ɡ/ are often described as "lenis", i.e. having lesser muscular tension than the "fortis" voiceless stops of other languages.
+/h/ is only weakly fricated. Between vowels, it is often voiced [ɦ].
+/v/ can be a voiced fricative [v], but is most often a voiced approximant [ʋ].
+/ð/ – the so-called "soft d" (Danish: blødt d) – is a velarized laminal alveolar approximant [ð̠ ̻˕ˠ].
+It is acoustically similar to the cardinal vowels [ɯ] and [ɨ].
+It is often perceived by non-native speakers of Danish as [l].
+Very rarely, /ð/ can be realized as a fricative.
+Syllable-initially, /r/ is a voiced uvular fricative [ʁ] or, more commonly, an approximant [ʁ̞]. According to Nina Grønnum, the fricative variant is voiceless [χ]. Its precise place of articulation has been described as pharyngeal, though others have specifically described it as "supra-pharyngeal" (that is, above the pharynx, rather than at it). When emphasizing a word, word-initial /r/ may be realized as a voiced uvular fricative trill [ʀ̝]. In syllable-final position, /r/ is realized as [ɐ̯].
+The alveolar realization [r] of /r/ is very rare. According to Torp (2001), it occurs in some varieties of Jutlandic dialect, and only for some speakers (mostly the elderly). The alveolar realization is considered non-standard, even in classical opera singing – it is probably the only European language in which this is the case. According to Basbøll (2005), it occurs (or used to occur until recently) in very old forms of certain conservative dialects in Northern Jutland and Bornholm.
+/l, j, r/ are voiceless [l̥, ç~ɕ, χ] after /p, t, k/, where the aspiration is realized as devoicing of the following consonant, so that /tj/ is normally realized as an alveolo-palatal affricate [tɕ].
+A voiced velar continuant [ɣ] occurred distinctively in older Standard Danish. Some older speakers still use it in high register, most often as an approximant [ɣ˕]. It corresponds to [w], after back vowels and /r/, and to /j/, after front vowels and /l/, in contemporary Standard Danish.
+/j/ is elided after /iː, yː/, and possibly also after /eː, øː/, and less commonly after /ɛː, aː/. Similarly, /v/ is elided after /uː/, and possibly also after /oː/, and less commonly after /ɔː/.
+
+
+== Vowels ==
+
+Modern Standard Danish has around 20 different vowel qualities. These vowels are shown below in a narrow transcription.
+/ə/ and /ɐ/ occur only in unstressed syllables and thus can only be short. Long vowels may have stød, thus making it possible to distinguish 30 different vowels in stressed syllables. However, vowel length and stød are most likely features of the syllable rather than of the vowel.
+The 26 vowel phonemes of Standard Danish (14 short and 12 long) correspond to 21 morphophonemes (11 short and 10 long).
+
+/i, iː, y, yː, u, uː/ are close [i, iː, y, yː, u, uː].
+Some speakers lower /i, iː, y, yː, u, uː/ to [e̝, e̝ː, ø, øː, o̝, o̝ː] after /r/.
+According to Grønnum (2005) /uː/ after /r/ is merged with /oː/ in speakers born after 1975, but more recent studies find that they are not fully merged for all speakers.
+/e, eː, oː/ and in open syllables /o/ are raised close-mid [e̝, e̝ː, o̝ː, o̝].
+/e/ is lowered to open-mid [ɛ] after /r/.
+Short /e/ is lower than long /eː/, and can even be lower than /ɛː/.
+/ɛ, ɛː, ø, øː/ are close-mid [e, eː, ø, øː].
+/ɛ/ is lowered to fully open [a] after /r/. In innovative varieties it merges with /ɑ/ before labials and coronals, and diphthongizes to [ɑj] before velars. Before /r/, it is lowered to open-mid [ɛ].
+/ɛ/ is sometimes raised to [e̝] before /ŋ/.
+/ɛː/ is lowered to true-mid [ɛ̝ː~ɛ̝j] after /r/. It is lowered to open-mid [ɛː] before /r/ in innovative varieties.
+Short /ɛ/ is lower than long /ɛː/, and can even be the same height as /aː/.
+/ø, øː/ after /r/ are variably described as true-mid [œ̝, œ̝ː] and open-mid [œ, œː].
+/œ, œː/ are true-mid [œ̝, œ̝ː].
+/œ/ after /r/ is near-open [ɶ̝].
+Some speakers merge /œ/ with /ɔ/ between /r/ and a nasal.
+/œ, œː/ before /r/ are open-mid [œ, œː].
+According to Ejstrup (2010) they are near-open [ɶ̝, ɶ̝ː].
+/ɔː/ and in closed syllables /o/ are near-back true-mid [ɔ̝˖ː, ɔ̝˖].
+/ɔ/ is near-back near-open weakly rounded [ʌ̞͗˖].
+/a, aː/ are typically described as near-open [æ] and open-mid [ɛː], respectively.
+According to Thøgersen & Pharao (2013) they are open-mid [ɛ] and true-mid [ɛ̝ː] in modern speech.
+In a 2012 perception study, British English speakers identified Danish /a/ as English  in 93% of cases and as  in only 7% of cases.
+/aː/ has been reported to diphthongize to [ɛj].
+/ɑ, ɑː/ are open central [ɑ̈, ɑ̈ː].
+/ɒ, ɒː/ are near-open back [ɒ̝, ɒ̝ː].
+
+The three way distinction in front rounded vowels /y ø œ/ is upheld only before nasals, e.g. /syns sønˀs sœns/ synes, synds, søns ('seems', 'sin's', 'son's').
+/a/ and /ɑ/ are largely in complementary distribution. However, a two-phoneme interpretation can be justified with reference to the unexpected vowel quality in words like andre /ˈɑndrɐ/ 'others' or anderledes /ˈɑnɐˌleːðəs/ 'different', and an increasing number of loanwords.
+The distinction between the short /o/ and /ɔ/ is one of the more conservative features of Danish phonology. Other Scandinavian languages feature just one short mid back vowel, usually transcribed with ⟨ɔ⟩. The long /uː/, /oː/ and /ɔː/ of Danish are also more conservative as compared with their historical counterparts in Norwegian and Swedish, which have undergone a counter-clockwise vowel shift to /ʉː, uː, oː/.
+Some phonemes and phones that only occur in unstressed position often merge with full phonemes and phones:
+
+[ʊ] with [o], leading to a variable merger of /və/ and /o/ (the former can be [wə] or [wʊ] instead, in which case no merger takes place).
+/ɐ/ with /ɔ/. According to Basbøll (2005), these sounds are usually merged, the main difference being the greater variability in the realizations of /ɐ/, which only occurs in unstressed position. In the narrow phonetic transcriptions of Grønnum (2005) and Brink et al. (1991), the two sounds are treated as identical.
+The vowel system is unstable, and according to a study by Ejstrup & Hansen (2004), the contemporary spoken language might be experiencing a merger of several of these vowels. The following vowel pairs may be merged by some speakers (only vowels not adjacent to |r| were analyzed):
+
+[øː] with [œ̝ː] (11 out of 18 speakers)
+[ø] with [œ̝] (7 out of 18)
+[e̝ː] with [eː] (5 out of 18)
+[e̝] with [e] (5 out of 18)
+[o] with [ɔ̝] (4 out of 18)
+[eː] with [ɛː] (3 out of 18)
+[oː] with [ɔ̝ː] (2 out of 18)
+[uː] with [oː] (1 out of 18)
+
+
+== Schwa-assimilation ==
+In addition to /ɐ/, which stems from the fusion of |ər|, |rə|, or |rər|, /ə/ assimilates to adjacent sonorants in a variety of ways:
+
+/ə/ assimilates to preceding long vowels: /ˈdiːə/ → [ˈtiːi] die 'nurse', /ˈduːə/ → [ˈtuːu] due 'pigeon'.
+/jə/ after a long vowel other than /iː, yː/ and /və/ after a long vowel other than /uː/ become monophthongs [ɪ, ʊ]: /ˈlɛːjə/ → [ˈleːɪ] læge 'doctor', /ˈlɔːvə/ → [ˈlɔ̝ːʊ] låge 'gate'. In innovative varieties, the vowels may become shorter: [ˈlejɪ], [ˈlɔ̝wʊ].
+A sonorant consonant (/ð, l, m, n, ŋ/) and /ə/, in either order, become a syllabic consonant [ð̩, l̩, m̩, n̩, ŋ̍].
+It is longer after a short vowel than after a long one: /ˈbaːðə/ → [ˈpæːð̩] bade 'bathe', /ˈhuːlə/ → [ˈhuːl̩] hule 'cave', /ˈsbiðə/ → [ˈspiðð̩] spidde 'spear', /ˈkulə/ → [ˈkʰull̩] kulde 'cold'.
+When /ə/ is placed between two sonorant consonants, the second becomes syllabic: /ˈsaðəl/ → [ˈsæðl̩] saddel 'saddle', /ˈhyləð/ → [ˈhylð̩] hyldet 'praised'.
+The place of a syllabic nasal (/ən/) assimilates to that of the preceding consonant: /ˈlɑbən/ → [ˈlɑpm̩] lappen 'the patch', /ˈlɑɡən/ → [ˈlɑkŋ̍] lakken 'varnishes'.
+In casual speech, /ə/ may also be elided after an obstruent, for instance: /ˈmasə/ → [ˈmæs] masse 'mass'. If that occurs after a long vowel, the syllable with the elided /ə/ may be retained by lengthening the vowel preceding the consonant: /ˈhɔːbə/ → [ˈhɔ̝ː(ɔ̝)p] håbe 'hope'.
+
+
+== Glottal stop insertion ==
+A word-initial vowel may be preceded by a glottal stop [ʔ] when preceded by a vowel. This is known as sprængansats.
+
+
+== Prosody ==
+Stress, stød and intonation are prosodic features used in Danish phonology. Durational distinctions are also present and affected by the grammatical context, but are usually considered part of the vowel phonemes.
+
+
+=== Stress ===
+Stress is phonemic and distinguishes words like billigst /ˈbilisd/ ('cheapest') and bilist /biˈlisd/ ('car driver'), but such word pairs are rare. In syntactic phrases, verbs lose their stress (and stød, if any) with an object without a definite or indefinite article: e.g. ˈJens ˈspiser et ˈbrød [ˈjens ˈspiˀsɐ e̝t ˈpʁœ̝ðˀ] ('Jens eats a loaf') ~ ˈJens spiser ˈbrød [ˈjens spisɐ ˈpʁœ̝ðˀ] ('Jens eats bread'). In names, only the surname is stressed, e.g. [johæn̩ luiːsə ˈhɑjˌpɛɐ̯ˀ] Johanne Luise Heiberg.
+Three degrees of stress - primary, secondary and unstressed - are distinguished.
+
+
+=== Stød ===
+
+In a number of words, stressed syllables with a long vowel or with a short vowel and a sonorant may exhibit a prosodic feature called stød ('thrust'), which is transcribed in the IPA as [ˀ]. Acoustically, vowels with stød tend to be a little shorter and feature creaky voice. Historically, this feature operated as a redundant aspect of stress on monosyllabic words that had either a long vowel or final voiced consonant. Since the creation of new monosyllabic words, this association with monosyllables is no longer as strong. Some other tendencies include:
+
+Polysyllabic words with the nominal definite suffix -et may exhibit stød
+Polysyllabic loanwords with final stress on either a long vowel or a vowel with a final sonorant typically feature stød
+Diphthongs with an underlying long vowel always have stød.
+
+
+=== Intonation ===
+
+Danish intonation reflects the combination of the stress group, sentence type and prosodic phrase, where the stress group is the main intonation unit. In Copenhagen Standard Danish, the stress group mainly has a certain pitch pattern that reaches its lowest peak on the stressed syllable followed by its highest peak on the immediately following unstressed syllable, after which it declines gradually until the next stress group. The peaks of stress groups in succession will generally be lower later in the utterance. However, the realization of the pitch is different in other varieties of Danish in where the peak is located related to the stressed syllable, and Jutlandic varieties often rise to the peak of the stress group on the stressed syllable. The pitch pattern of an utterance can also reflect the type of utterance, with declaratives having a steep falling pitch and questions displaying a level pitch, with other categories in between.
+The realization of stød also affects pitch, while some varieties also realize it primarily with pitch.
+
+
+== Text sample ==
+The sample text is an indistinct reading of the first sentence of The North Wind and the Sun.
+
+
+=== Orthographic version ===
+Nordenvinden og solen kom engang i strid om, hvem af dem der var den stærkeste.
+
+
+=== Broad phonetic transcription ===
+[ˈnoɐ̯ɐnˌve̝nˀn̩ ʌ ˈsoˀl̩n kʰʌm e̝ŋˈkɑŋˀ i ˈstʁiðˀ ˈʌmˀ ˈvemˀ ˈæ pm̩ tɑ vɑ tn̩ ˈstɛɐ̯kəstə]
+
+
+== References ==
+
+
+== Bibliography ==
+
+
+== Further reading ==
+
+
+== External links ==
+IPA for Danish 
+Overview of the Danish sound system

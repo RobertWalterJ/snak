@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" translate="no" data-theme="dannebrog" data-eff="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FBF7F4">
+<meta name="google" content="notranslate">
+<meta name="app-key" content="snak.v1">
+<title>Snak — learn Danish</title>
+<meta name="description" content="Learn Danish with short rounds of spaced questions. Works offline.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.cac3fe1d02.css">
+<script>
+/* Before first paint: the saved palette, and light or dark as the phone prefers (or as chosen),
+   so the page does not flash the wrong colours while it loads. */
+(function () {
+  var theme = 'dannebrog', scheme = 'auto', big = false;
+  try { var s = JSON.parse(localStorage.getItem('snak.v1') || '{}').settings || {}; theme = s.theme || theme; scheme = s.scheme || scheme; big = !!s.big; } catch (e) {}
+  var dark = scheme === 'dark' || (scheme === 'auto' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+  var el = document.documentElement;
+  el.setAttribute('data-theme', theme); el.setAttribute('data-eff', dark ? 'dark' : 'light'); if (big) el.className = 'big';
+})();
+</script>
+</head>
+<body>
+<div id="app"><main class="empty"><p>Loading…</p></main></div>
+<script>window.APP_BUILD={"v":"0.2.0","commit":"0b8f4db+","date":"2026-10-08"};window.APP_DECK="data/deck.2d65ed08c6.json";window.APP_AUDIO_INDEX="data/audio.c6231d826f.json";</script>
+<script type="module" src="app.cc834062cc.js"></script>
+</body>
+</html>

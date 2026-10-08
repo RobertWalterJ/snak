@@ -11,7 +11,7 @@ let man = { w: {}, s: {}, voice: {} };
 let current = null;
 
 export async function loadAudio() {
-  try { const r = await fetch('data/audio.json'); if (r.ok) man = await r.json(); } catch { /* no clips: the phone voice is used */ }
+  try { const r = await fetch(window.APP_AUDIO_INDEX || 'data/audio.json'); if (r.ok) man = await r.json(); } catch { /* no clips: the phone voice is used */ }
 }
 const clip = (kind, key) => man[kind]?.[String(key).toLowerCase()] || null;
 export const hasClips = () => Object.keys(man.w || {}).length > 0;

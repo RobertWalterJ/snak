@@ -1,0 +1,73 @@
+{"kind":"culture","title":"Hygge","revid":1377391956,"timestamp":"2026-09-29T04:44:58Z","url":"https://en.wikipedia.org/w/index.php?title=Hygge&oldid=1377391956","license":"CC BY-SA 4.0, Wikipedia contributors"}
+Hygge (, H(Y)OO-gə; Danish: [ˈhykə]; Norwegian: [ˈhŷɡːə]) is a word in Danish and Norwegian that describes a cozy, contented mood evoked by comfort and conviviality. As a cultural category with its sets of associated practices, hygge has more or less the same meaning in both places and in both languages; however, the emphasis on hygge as a core part of Danish culture is a recent phenomenon, dating to the late 20th century. In the 21st century, the concept has also been familiarized abroad.
+
+
+== Etymology ==
+By convention, the word hygge is thought to originate from a Danish word meaning "to instill courage, give comfort, joy." Hygge stems from hyggja, which means "to think" in Old Norse. Hygge is derived from the Old Norse hugr, later hug, which means the soul, mind, consciousness.
+It is however speculated that hygge may derive from a homograph hug, originating in the 1560s word hugge, which means "to embrace." Hugge is of unknown origin but is highly associated with an Old Norse term, hygga, "to comfort," which comes from hugr, meaning "mood." In turn, hugr is a cognate of the Old English hycgan, and comes from the Germanic hugyan, meaning, like Old Norse hyggja, "to think, consider."
+It first appeared in Danish writing in the 19th century and has since evolved into the cultural idea known in Denmark and Norway today. While hygge has exactly the same meaning in Norwegian as in Danish and is a widely used word in both Norway and Denmark (including in its derived forms, such as hyggelig), the emphasis specifically on "hygge" as an important part of cultural identity is mostly Danish; in Norway "hygge" is just a word, similar in status to "cozy."
+
+
+== Use ==
+In both Danish and Norwegian, hygge refers to "a form of everyday togetherness", "a pleasant and highly valued everyday experience of safety, equality, personal wholeness and a spontaneous social flow".
+The noun hygge includes something nice, cozy, safe and known, referring to a psychological state. The Happiness Research Institute in Copenhagen has studied the positive effect of hygge on Danish society.
+Collins English Dictionary defines the word as "a concept, originating in Denmark, of creating cozy and convivial atmospheres that promote wellbeing".
+In "Cultural Semantics and Social Cognition: a Case Study on Danish Universe of Meaning", De Gruyter Mouton addresses how translating hygge into English is highly problematic. The difference in translation has led to different interpretations of the word.
+
+
+== Hygge's cultural impact on Denmark ==
+Hygge is a way of life for Danes that embodies a sense of coziness, simplicity, and being present. Researchers Smoyer and Miking define hygge as a "restorative practice" and emphasize Danes' strong commitment to it. Meik Wiking, the author of The Little Book of Hygge, created the Hygge Manifesto, which quantifies hygge into ten ideals: atmosphere, presence, pleasure, equality, gratitude, comfort, togetherness, harmony, truce, and shelter. Wiking believes that these ten ideals are key qualities for living a happy life.
+Many different Danish traditions are influenced by hygge. For instance, in winter months Danes often make home-cooked food, such as cakes or meatballs, from scratch. Additionally, hygge inspires Danish interior design throughout the year. Since pie, yuletide, sweaters, hot cocoa and soup are Yuletide traditions, autumn and winter may seem to be the sole seasons of hygge. However, moments of hygge happen throughout the year, including in summer. Examples of hot-weather outdoor activities considered hygge include picnics, barbecues, concerts, street fairs and cycling. In Lindsey Robert's article "6 Ways to get that Hygge feeling, even in the Summer Swelter", she suggests giving furniture a second life, adding plants indoors, cleaning one's space, alternating textile, picking statement pieces, and designing outdoor areas.
+Hygge also influences jails in Denmark.  In "Hygge: Food and the Construction of Safety among Incarcerated Women in Denmark", researchers Smoyer and Minke interviewed such women and found that they are permitted to wear their own clothes and attempt to make their cells as simple and cozy as possible. The research concluded that hygge benefited these women.
+As studies show that many Danes play video games (for example, 49% of Danish males aged 13–19 game every day), it is not surprising that Hygge has deeply impacted the video game industry in Denmark. Danish video gamers actively seek—and enforce—a sense of community with the result of achieving hygge in shared online spaces, moderating players' behaviors toward others and even their achievements in the game to maintain harmony. Several studies conducted in Denmark on young Danish gamers link gaming to improved social skills and academic achievement, in large part due to the cultural inclination towards hygge.
+
+
+== Hygge's international influence ==
+The concept of hygge has been adopted in countries outside of Denmark. For instance, in an article called "Home with Hygge", Broyles says that Americans often dream of bigger things, and yet, per the World Happiness Report, rank only eighteenth in national happiness, while Danes consistently rank in the top three. Some have begun to incorporate the Hygge Manifesto into their lives as a means to simplify.
+Denmark, Danish persons, and Danish companies and organizations have been noted as deploying "hygge" as a soft power tool to achieve geopolitical aims. Some examples of this usage of hygge include Danish green companies seeking to attract the best talent from elsewhere, the Danish alcohol giant Carlsberg's marketing efforts highlighting the camaraderie between beer consumption and sports entertainment, and the University of Copenhagen explicitly stating that hygge's inherent coziness is a key reason that international students should seek to attend the university.
+Hygge is, arguably, the Danish expression of a wider traditional Scandinavian and perhaps Nordic affective sociocultural assemblage rooted in the region's history and geography. It is noted that hygge derives not only from the Danish language, but also from Norwegian. Many authors attribute hygge's etymology to 18th Century Norwegian, from a breadth of concepts relating to fire, safety, community/familial bonds, comfort and joy, orderliness, tranquility, and so on. More specifically, hygge has its roots in Old Norse, relating to fire, whose heat and light offer protection from the dangers outside the home.
+By examining Scandinavian/Nordic physical geography and historical developments amidst dark, cold, wet winters, occasionally poor agriculture, and long stretches of time away from home trading and fishing in often rough, cold seas, one can understand how the region's peoples would desire and develop such social conditions. For example, Sweden has a similar culture concept, Lagom, described as "not too much, not too little", embodying similar values to Hygge's "less is more" attitude. Sweden also have "Mys" or "Mysigt" similar to Norway that has a similar concept of "Koselig", which is invariably described as a feeling of cosiness (its rough English translation), warmth and comfort, quality time spent with community and family, consuming simple and comforting cuisine, and a connection with nature; among other feelings and experiences. Iceland has a concept called "þetta reddast", which can be understood as "it will all work out okay" and developed into everyday Icelandic usage as a result of life in the barren, harsh, and cold environment of the country. Finland—despite being culturally distinct from the Scandinavian countries—has a similar concept called sisu, which has been described as the Finns' national character. Sisu is considered more "raw" than hygge, being an assemblage of feelings or concepts such as bravery, grit, perseverance in the face of adversity, tenacity, and so on. However, this grittiness is matched by concepts similar to hygge such as comfort; especially sauna culture, oneness with nature, light and warmth, amongst other things.
+
+
+== Therapeutic benefits ==
+There are numerous activities that have been found to help reduce feelings of hostility and anxiety while also promoting an improved level of connectedness between people. These hyggelig activities, shared by The Happiness Institute, have been known to produce feelings of love, warmth, and safety as a result of the release of oxytocin. Participating in hygge practices may contribute to an overall positive feeling of wellbeing. Some who embrace this practice may use it as part of an intentional holistic approach to their health care. Some activities include manipulating the environment with candles and lighting, appreciating nature, promoting comfort and peace by participating in baths, massage, cozy blankets, practicing mindfulness through journaling, focusing on growing spiritually through meditation or prayer.
+
+
+== In popular culture ==
+Collins English Dictionary named hygge the runner-up (after Brexit) as word of the year in the UK in 2016. This followed a period during which several books focusing on hygge had been marketed in the UK, such as Meik Wiking's The Little Book of Hygge, Marie Tourell Søderberg's Hygge: The Danish Art of Happiness, and Louisa Thomsen Brits's The Book of Hygge: The Danish Art of Living Well.
+The concept of hygge gained popularity with an international audience in late 2017, resulting in an increase of online searches and the rise of the hashtag "#Hygge" on Instagram.
+In Copenhagen, the capital of Denmark, there is a Hygge & Happiness walking tour.
+Act II of the Broadway musical Frozen opens with the song "Hygge", which is all about being comfortable, happy, and together.
+In the Australian soap opera Neighbours, Jemima Davies-Smythe incorporates hygge into a redesign of her half-brother Karl Kennedy's living room.
+In the 2019 book by Sally Goldenbaum, A Murderous Tangle (Seaside Knitter's Society Book 3), pg 26, the character Nell sees a poster and says the phrase out loud: "SEASIDE KNITTING STUDIO'S FIRST HOLIDAY HYGGE." The meaning and the format of their hygge is discussed in the poster and amongst the friends who meet regularly on Thursday nights for food, conversation, warmth, and knitting at the studio. Chapter 9 has descriptions of the first hygge event which went well despite the "cold and damp day... and news of a murder", p87.
+A UK housing development in the town of Keynsham, Somerset, was named "Hygge Park" by developer Crest Nicholson in 2019.
+Swedish-owned ferry company Stena Line offers a series of premium relaxation lounges on its Irish Sea ferry services called "Hygge Lounges". In November 2020, The Hygge Suite brand of vacation rentals opened in Giants Ridge, Minnesota; and later two more in Lutsen, Minnesota, aimed at getting people away from the cities to relax and unwind with their loved ones. In September 2022, Hotel Hygge opened in Buellton, California.
+The second episode of the second series of BBC sitcom Motherland, "Soft Opening", saw Amanda open a concept store called "Hygge Tygge" which, unbeknown to her, means "cozy chewing" in Danish.
+The Ghost and Molly McGee episode "Ready, Set, Snow" sees Molly trying to get the most out of a snow day while her family and Libby stay inside to experience hygge.
+Swedish Homeware giant IKEA has used hygge as a concept in marketing its products.
+
+
+== Similar words ==
+In Dutch, gezelligheid similarly pertains comfort and coziness, but this term is social oriented rather than place (being in good company anywhere)
+In German, Gemütlichkeit means the state of warmth, friendliness and belonging.
+The Japanese adjective/verb まったり (mattari) suggests a feeling of calm relaxation.
+The Norwegian adjective koselig is used to describe a feeling of warmth, intimacy and getting together in an agreeable environment.
+The Swedish adjective mysig (and its associated noun mys) describes a pleasant and warm atmosphere of togetherness in a pleasant setting.
+In Yiddish, the adjective היימיש (heimish) conveys the sense of "familiar, homey, informal, cozy, warm".
+In Swedish, lagom means "not too much, not too little"; it embodies similar values to Hygge's "less is more" attitude
+In Costa Rica, the Spanish phrase pura vida (literally "pure life") carries a similar connotation of a carefree, laid back and optimistic national spirit.
+
+
+== See also ==
+Happiness
+Safety
+Simple living
+Slow movement
+
+
+== References ==
+
+
+== External links ==
+
+The Guardian: The hygge conspiracy

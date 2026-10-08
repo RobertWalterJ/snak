@@ -388,7 +388,7 @@ function importBackup() {
 function aboutSheet() {
   sheet(() => h('div', {},
     h('h2', {}, `${L.app}`),
-    h('p', { class: 'note' }, `A prototype, built ${deck.built}. ${n(deck.words.length)} words, ${n(deck.items.length)} questions.`),
+    h('p', { class: 'note' }, `Version ${window.APP_BUILD?.v || 'dev'}${window.APP_BUILD?.commit ? ' (' + window.APP_BUILD.commit + ')' : ''}, built ${window.APP_BUILD?.date || deck.built}. ${n(deck.words.length)} words, ${n(deck.items.length)} questions.`),
     h('p', {}, 'Word meanings, genders, sounds and word forms come from English Wiktionary (CC BY-SA 4.0), through kaikki.org. Example sentences come from Tatoeba and its contributors (CC BY 2.0 FR). Word order by frequency comes from the OpenSubtitles-based FrequencyWords list (CC BY-SA 4.0).'),
     h('p', {}, 'Recordings by real people come from Wikimedia Commons (Lingua Libre and others) and Tatoeba, and each is credited to its speaker. The computer voice is Piper.'),
     h('p', {}, 'A few meanings for the commonest function words were checked by hand because Wiktionary lists a rare meaning first. Wrong answers are real words taken from other entries.'),
@@ -431,7 +431,7 @@ function sweep() {
 
 // ── start ──
 async function start() {
-  const r = await fetch('data/deck.json');
+  const r = await fetch(window.APP_DECK || 'data/deck.json');
   if (!r.ok) throw new Error('The word list did not load.');
   deck = await r.json(); L = deck.lang;
   S.setDeck(deck);
@@ -446,7 +446,8 @@ async function start() {
   // The offline worker is for the published app. On this computer (localhost) the files are already local, and a worker that keeps
   // old copies only gets in the way while the app is being changed, so it is removed there.
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+    // (open the app with ?sw=1 on this computer to try the offline worker)
+    if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname) && !/[?&]sw=1/.test(location.search)) {
       navigator.serviceWorker.getRegistrations().then((rs) => rs.forEach((r) => r.unregister())).catch(() => {});
       caches.keys().then((ks) => ks.filter((k) => k.startsWith(L.slug + '-v-')).forEach((k) => caches.delete(k))).catch(() => {});
     } else navigator.serviceWorker.register('sw.js').catch(() => {});
