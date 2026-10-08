@@ -46,6 +46,5 @@ Not done yet: a colour-blindness simulation, and a test on a real phone.
 
 ## Danish notes
 
-- Danish verbs do not change with the person, so the ladder is by time only. Wiktionary's verb parts are complete for
-  roughly 480 verb-form questions' worth of the 160 commonest verbs; incomplete tables are skipped, not guessed.
+- Danish verbs do not change with the person, so the ladder is by time only. The ladder covers the 160 commonest verbs whose Wiktionary entry gives present, past and participle (480 questions). Incomplete entries are skipped, not guessed.
 - Spelling hides many sounds (and the stød). The teaching card shows the IPA from Wiktionary. Stød is not explained yet.
