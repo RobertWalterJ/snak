@@ -18,6 +18,7 @@ export const ICON = {
   today: svg('<path d="M4 12l8-8 8 8"/><path d="M6 10v10h12V10"/>'),
   course: svg('<path d="M4 19V5l8 3 8-3v14l-8-3z"/><path d="M12 8v11"/>'),
   words: svg('<path d="M4 6h16M4 12h16M4 18h10"/>'),
+  notes: svg('<path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z"/><path d="M5 17a3 3 0 013-3h11"/><path d="M9 8h6"/>'),
   gear: svg('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/>'),
   speaker: svg('<path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 010 7"/>'),
   close: svg('<path d="M6 6l12 12M18 6L6 18"/>'),

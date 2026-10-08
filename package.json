@@ -6,10 +6,14 @@
   "type": "module",
   "scripts": {
     "corpus": "node build/extract.mjs && node build/words.mjs && node build/sentences.mjs",
+    "notes": "node build/notes-src.mjs",
+    "audio": "node build/probe-audio.mjs && node build/items.mjs && node build/audio-plan.mjs && node build/fetch-audio.mjs",
     "deck": "node build/items.mjs",
     "verify": "node build/verify.mjs",
-    "check": "node build/items.mjs && node build/verify.mjs && node build/test-verify.mjs && node build/audit-colour.mjs && node build/test-sched.mjs",
+    "check": "node build/items.mjs && node build/verify-notes.mjs && node build/verify.mjs && node build/test-verify.mjs && node build/audit-colour.mjs && node build/test-sched.mjs",
     "dev": "node build/serve.mjs"
   },
-  "devDependencies": { "sharp": "^0.35.5" }
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
 }

@@ -14,8 +14,10 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (f) => JSON.parse(readFileSync(join(ROOT, f), 'utf8'));
 const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).href);
 const { GLOSS } = await import(pathToFileURL(join(ROOT, 'content', 'glosses.mjs')).href);
+const { NOTES: NOTE_SRC } = await import(pathToFileURL(join(ROOT, 'content', 'notes.mjs')).href);
+const { verifyNotes, loadSource } = await import(pathToFileURL(join(ROOT, 'build', 'verify-notes.mjs')).href);
 
-export function verifyDeck(deck, LEX, SENTS) {
+export function verifyDeck(deck, LEX, SENTS, NOTES = null) {
   const faults = [];
   const bad = (id, why) => faults.push(`${id}: ${why}`);
   const byWord = new Map(deck.words.map((w, i) => [w.w, i]));
@@ -32,13 +34,35 @@ export function verifyDeck(deck, LEX, SENTS) {
     if (!e.glosses.has(w.g) && GLOSS[w.w] !== w.g) bad(w.w, `gloss "${w.g}" is not a Wiktionary sense and not a hand-checked override`);
     if (w.stage == null || !deck.stages[w.stage]?.words.includes(i)) bad(w.w, 'not in its stage');
   });
+  // the notes in the SHIPPED deck: same sentences as content/notes.mjs, written from the revision that is saved
+  if (NOTES) {
+    if ((deck.notes || []).length !== NOTES.length) bad('notes', 'the deck has ' + (deck.notes || []).length + ' notes, content/notes.mjs has ' + NOTES.length);
+    for (const dn of deck.notes || []) {
+      const n = NOTES.find((x) => x.id === dn.id);
+      if (!n) { bad('note ' + dn.id, 'not in content/notes.mjs'); continue; }
+      if (JSON.stringify(dn.claims) !== JSON.stringify(n.claims.map((c) => c.t))) bad('note ' + dn.id, 'its sentences differ from content/notes.mjs: rebuild the deck');
+      const src = loadSource(n.src);
+      if (!src || src.meta.revid !== dn.source.revid) bad('note ' + dn.id, 'written from a different article revision than the one saved');
+    }
+    for (const f of verifyNotes(NOTES).faults) bad('notes', f);
+  }
   const ids = new Set();
   for (const it of deck.items) {
     if (ids.has(it.id)) bad(it.id, 'duplicate id'); ids.add(it.id);
+    if (it.k === 'note') {
+      const nt = deck.notes?.[it.n];
+      const o2 = it.options || [];
+      if (!nt) { bad(it.id, 'no such note'); continue; }
+      if (!o2.includes(it.answer) || new Set(o2.map((x) => String(x).toLowerCase())).size !== o2.length || o2.length !== 4) bad(it.id, 'options must be 4 different answers including the answer');
+      const claim = nt.claims[it.claim];
+      if (!claim || !claim.toLowerCase().replace(/[‘’]/g, "'").includes(String(it.answer).toLowerCase().replace(/[‘’]/g, "'"))) bad(it.id, 'the answer is not stated in the note claim it points to');
+      continue;
+    }
     const w = deck.words[it.i];
     if (!w) { bad(it.id, 'no such word'); continue; }
     const o = it.options || [];
     if (o.some((x) => x == null || String(x).trim() === '' || /^(null|undefined)$/.test(String(x)))) bad(it.id, 'empty or null option');
+    if (it.k !== 'note' && o.some((x) => !/\p{L}/u.test(String(x)))) bad(it.id, 'an option with no letters in it (a dash from a table?)');
     if (new Set(o.map((x) => String(x).toLowerCase())).size !== o.length) bad(it.id, 'duplicate options');
     if (!o.includes(it.answer)) bad(it.id, 'answer not among options');
     if (o.length < 2) bad(it.id, 'fewer than two options');
@@ -82,7 +106,7 @@ export function verifyDeck(deck, LEX, SENTS) {
 
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
   const deck = read('app/data/deck.json');
-  const faults = verifyDeck(deck, read('corpus/lexicon.json'), read('corpus/sentences.json'));
+  const faults = verifyDeck(deck, read('corpus/lexicon.json'), read('corpus/sentences.json'), NOTE_SRC);
   if (faults.length) { console.error(`VERIFY FAILED: ${faults.length} fault(s)`); faults.slice(0, 40).forEach((f) => console.error('  ' + f)); process.exit(1); }
   const by = {};
   for (const it of deck.items) by[it.k] = (by[it.k] || 0) + 1;

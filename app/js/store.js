@@ -8,6 +8,7 @@ const DEFAULTS = () => ({
   settings: { theme: null, scheme: 'auto', big: false, sitting: 18, newPerRound: 9, autoRead: false, floor: 0, teach: true },
   cards: {},            // question id -> FSRS card (dates as ISO strings)
   seen: {},             // word index -> true once its teaching card has been shown
+  notesRead: {},        // note id -> true once the learner has read it (its quiz questions open then)
   log: {},              // YYYY-MM-DD -> { n: answered, c: correct, w: new questions started }
 });
 

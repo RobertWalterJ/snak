@@ -42,6 +42,9 @@ export function answer(id, correct, now = new Date()) {
 // ── what the learner has shown ──
 export const wordStarted = (i) => { const r = deck.readOf.get(i); return r != null && met(r); };
 export const wordKnown = (i) => { const r = deck.readOf.get(i); const c = r != null && cardOf(r); return !!c && c.stability >= 21; };
+export const startedCount = () => deck.words.reduce((n, _, i) => n + (wordStarted(i) ? 1 : 0), 0);
+export const noteRead = (id) => !!State.data.notesRead?.[id];
+export const markNoteRead = (id) => { State.data.notesRead[id] = true; State.save(); };
 export const isDue = (id, now = new Date()) => { const c = cardOf(id); return !!c && new Date(c.due) <= now; };
 
 export function stageState() {
@@ -59,6 +62,7 @@ const SUPPLY = 150;
 // can this question be asked, if it is new? (voice needed? word started?)
 function eligible(it, canSound) {
   if (it.needsVoice && !canSound) return false;
+  if (it.k === 'note') return met(it.id) || !!State.data.notesRead?.[deck.notes[it.n].id];     // a note's questions open once it has been read
   if (met(it.id)) return true;
   if (it.k === 'read') return true;
   if (it.k === 'form' && State.data.seen[it.i]) return true;               // the card showed the whole table, so practising it is fair
@@ -87,9 +91,9 @@ export function buildRound({ size = State.s.sitting, newPerRound = State.s.newPe
   let horizon = Math.min(st.current, deck.stages.length - 1);
   const count = (h) => unseen.filter((it) => it.stage <= h).length;
   while (horizon < deck.stages.length - 1 && count(horizon) < SUPPLY) horizon++;
-  const fresh = unseen.filter((it) => it.stage <= horizon).sort((a, b) => a.stage - b.stage || (a.rung ?? 0) - (b.rung ?? 0) || a.level - b.level || a.i - b.i);
+  const fresh = unseen.filter((it) => it.stage <= horizon).sort((a, b) => a.stage - b.stage || (a.rung ?? 0) - (b.rung ?? 0) || a.level - b.level || (a.i ?? 1e9) - (b.i ?? 1e9));
   const chosen = [], used = new Set();
-  const take = (list, n) => { for (const it of list) { if (n <= 0) break; const g = 'w' + it.i; if (used.has(g)) continue; used.add(g); chosen.push(it); n--; } return n; };
+  const take = (list, n) => { for (const it of list) { if (n <= 0) break; const g = it.k === 'note' ? 'n' + it.n : 'w' + it.i; if (used.has(g)) continue; used.add(g); chosen.push(it); n--; } return n; };
   const newWanted = only ? 0 : Math.min(newPerRound, size);
   take(due, size - newWanted);
   // the new questions: about six in ten bring in new words, the rest are new kinds of question on words already met

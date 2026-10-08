@@ -20,6 +20,25 @@ Close the black window to stop it. Or: `npm run dev`.
 - Three palettes, each light and dark; large-text option; no timers anywhere.
 - Backup and restore of progress as a file. Works offline after the first load.
 
+## Notes: culture, history and language
+
+The **Notes** tab has 14 short readings (culture, history, language). Each note is built from claims: every sentence the
+app shows is backed by a quotation copied word for word from the English Wikipedia article saved under `sources/notes/`
+(CC BY-SA 4.0; the revision id is kept and shown). `build/verify-notes.mjs` fails the build if a quotation is not in its
+article, a sentence runs past 20 words, a Danish term is not in the article, or a quiz answer is not stated in its claim.
+A note opens as you learn words, and its two questions join your rounds after you read it. Notes can be read aloud with
+the phone's English voice. To add a note: add the article to `content/notes-topics.mjs`, run `npm run notes`, then write
+its claims in `content/notes.mjs`.
+
+## Sound
+
+Best source first: (1) a **recording by a real person** (Wikimedia Commons / Lingua Libre for words; Tatoeba for
+sentences), credited by name on the card; (2) a **computer-voice clip** made for the app with Piper, so every word,
+every form in the ladder and every example sentence has the same clear voice; (3) the phone's own voice. Every
+speaker button has a **Slow** button beside it, and Settings has Normal / Slow / Very slow and automatic read-aloud.
+Settings can save every clip on the device for offline use. The Piper voice (see `Language Audiogen_audio.py`,
+`npm run audio` plus that script) is a machine voice and the app says so.
+
 ## Checks
 
 `npm run check` rebuilds the deck and runs: **verify** (every answer re-derived from the corpus),
@@ -38,8 +57,8 @@ Not done yet: a colour-blindness simulation, and a test on a real phone.
 
 ## Not yet (honest list)
 
-- No recordings: every spoken word is the phone's own machine voice. If the phone has none for Danish, listening
-  questions and the speaker buttons are switched off.
+- Recordings by real people are few: 99 words (Lingua Libre and Wikimedia Commons) and 97 example sentences (Tatoeba, native speakers). Everything else is a Piper computer voice (2,561 word clips, 2,873 sentence clips). Nobody has listened to every clip, so some pronunciations may be off; the real recordings are credited and the machine voice is labelled.
+- The clips are in `app/audio/` (about 70 MB) and are not in git; rebuild them with `npm run audio` and `Language Audiogen_audio.py`.
 - Gap questions can have more than one grammatical answer; the English translation is shown to settle it.
 - No level check (there is a "skip the first stages" setting), no conversations, no speaking practice.
 - Never pushed to GitHub or deployed.

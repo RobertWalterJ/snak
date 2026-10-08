@@ -8,6 +8,7 @@ export const LANG = {
   native: 'dansk',
   tatoeba: { sentences: 'dan_sentences.tsv', links: 'dan-eng_links.tsv' },
   // the phone's own voice, used to read words aloud (there is no recording set yet)
+  audio: { tatoeba: 'dan', ll: 'LL-Q9035 (dan)-', old: 'Da-', kaikki: 'kaikki-da.jsonl', piper: { model: 'da_DK-talesyntese-medium', label: 'Piper, Danish voice "talesyntese" (CC0 training data, Språkbanken)' } },
   voice: { prefix: 'da', label: 'Danish' },
   stageCuts: [200, 500, 900, 1400, 2000],
   stageTitles: ['The first 200 words', 'Words 201–500', 'Words 501–900', 'Words 901–1,400', 'Words 1,401–2,000'],

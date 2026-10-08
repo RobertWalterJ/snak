@@ -6,7 +6,9 @@
 import { h, ICON, iconBtn, sheet, seg, n } from './ui.js';
 import { State, dayKey } from './store.js';
 import * as S from './sched.js';
-import { say, stop, hasVoice, onVoices } from './voice.js';
+import { onVoices, say } from './voice.js';
+import * as A from './audio.js';
+const stop = A.stop;
 
 let deck, L;
 const app = document.getElementById('app');
@@ -15,7 +17,7 @@ let installPrompt = null;
 window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e; if (tab === 'settings') render(); });
 
 const POS = { n: 'noun', v: 'verb', adj: 'adjective', adv: 'adverb', pron: 'pronoun', prep: 'preposition', conj: 'conjunction', det: 'determiner', num: 'number', intj: 'interjection', part: 'particle' };
-const canSound = () => hasVoice(L.voice.prefix);
+const canSound = () => A.canHear(L.voice.prefix);
 
 // ── look ──
 function applyLook() {
@@ -29,23 +31,28 @@ function applyLook() {
 }
 
 // ── speaking ──
-// A speaker button, shown only if the phone can speak that language.
-function speak(text, lang = 'target', label = 'Read aloud') {
-  const prefix = lang === 'target' ? L.voice.prefix : 'en';
-  if (lang === 'target' && !canSound()) return null;
-  return h('button', { class: 'icon', type: 'button', 'aria-label': label, title: label, onclick: (e) => { e.stopPropagation(); say(text, prefix); }, html: ICON.speaker });
+// Speaker buttons (normal, and slow), shown only if there is a recording, a computer-voice clip or a phone voice.
+// ref = ['w', word] (the default, keyed by the text) or ['s', Tatoeba sentence id].
+const play = (text, ref, slow = false) => A.play(ref?.[0] || 'w', ref?.[1] ?? text, text, L.voice.prefix, { slow });
+function speak(text, ref = null, { slowToo = true } = {}) {
+  if (!canSound()) return null;
+  const go = (slow) => (e) => { e.stopPropagation(); play(text, ref, slow); };
+  return h('span', { class: 'row', style: 'gap:6px' },
+    h('button', { class: 'icon', type: 'button', 'aria-label': 'Hear it', title: 'Hear it', onclick: go(false), html: ICON.speaker }),
+    slowToo ? h('button', { class: 'icon txt', type: 'button', 'aria-label': 'Hear it slowly', title: 'Hear it slowly', onclick: go(true) }, 'Slow') : null);
 }
-const withSpeaker = (node, text, lang) => h('div', { class: 'row' }, h('div', { class: 'grow' }, node), speak(text, lang));
+const withSpeaker = (node, text, ref) => h('div', { class: 'row' }, h('div', { class: 'grow' }, node), speak(text, ref));
+const creditLine = (kind, key) => { const c = A.credit(kind, key, L.voice.prefix); return c ? h('p', { class: 'note', style: 'margin:2px 0 8px' }, c) : null; };
 
 // ── a word, shown in full: the teaching card and the word sheet ──
 const genderText = (code) => { const g = L.genders[code]; return g ? `${g.label} (${g.note})` : null; };
 function wordBody(i) {
   const w = deck.words[i];
   const b = h('div');
-  b.append(withSpeaker(h('p', { class: 'big-word' }, w.w), w.w));
+  b.append(withSpeaker(h('p', { class: 'big-word' }, w.w), w.w), creditLine('w', w.w));
   const bits = [h('span', { class: 'chip' }, POS[w.k] || w.k)];
   if (w.gen && genderText(w.gen)) bits.push(h('span', { class: 'chip' }, genderText(w.gen)));
-  b.append(h('p', {}, ...bits, w.ipa ? h('span', { class: 'ipa' }, w.ipa) : null));
+  b.append(h('p', {}, ...bits, (w.ipa || w.ipa2) ? h('span', { class: 'ipa' }, [w.ipa, w.ipa2].filter(Boolean).join('  ')) : null));
   b.append(h('p', { class: 'prompt' }, 'Meaning'), h('p', { style: 'font-size:1.15rem;margin-top:0' }, w.g));
   const alts = (w.alt || []).filter((a) => !a.toLowerCase().includes(w.g.toLowerCase()) && !w.g.toLowerCase().includes(a.toLowerCase()));
   if (alts.length) b.append(h('p', { class: 'note' }, 'Also: ' + alts.join('; ')));
@@ -60,7 +67,7 @@ function wordBody(i) {
       ...[['Nominative', 'nom'], ['Accusative', 'acc'], ['Dative', 'dat'], ['Genitive', 'gen']].map(([a, c]) => h('tr', {}, h('th', {}, a), h('td', { class: 'tx' }, cell('sg.ind.' + c)), h('td', { class: 'tx' }, cell('pl.ind.' + c))))));
   }
   const ex = deck.examples[i] || [];
-  for (const si of ex) { const s = deck.sentences[si]; b.append(h('div', { class: 'ex' }, withSpeaker(h('div', { class: 'tx' }, s.t), s.t), h('div', { class: 'note' }, s.e))); }
+  for (const si of ex) { const s = deck.sentences[si]; b.append(h('div', { class: 'ex' }, withSpeaker(h('div', { class: 'tx' }, s.t), s.t, ['s', s.id]), h('div', { class: 'note' }, s.e), A.isHuman('s', s.id) ? creditLine('s', s.id) : null)); }
   if (!ex.length && w.ex?.length) for (const s of w.ex) b.append(h('div', { class: 'ex' }, withSpeaker(h('div', { class: 'tx' }, s.t), s.t), h('div', { class: 'note' }, s.e)));
   if (L.pronNote && i < 400) b.append(h('p', { class: 'note' }, L.pronNote));
   return b;
@@ -105,7 +112,7 @@ function progressEl() {
 
 function showTeach(i) {
   chrome(h('main', {}, progressEl(), h('div', { class: 'card', style: 'margin-top:14px' }, h('p', { class: 'chip' }, 'A new word'), wordBody(i)), h('button', { class: 'btn', type: 'button', onclick: () => { S.markSeen(i); stop(); advance(); } }, 'Got it')), { withTabs: false });
-  if (State.s.autoRead && canSound()) say(deck.words[i].w, L.voice.prefix);
+  if (State.s.autoRead && canSound()) play(deck.words[i].w);
 }
 
 const gtext = (key) => { const g = Object.values(L.genders).find((x) => x.key === key); return g ? `${g.label} (${g.note})` : key; };
@@ -115,13 +122,14 @@ function questionParts(it) {
   switch (it.k) {
     case 'read': return { prompt: 'What does this word mean?', main: h('p', { class: 'big-word' }, w.w), say: w.w, optTx: false };
     case 'recall': return { prompt: 'Which word means this?', main: h('p', { class: 'big-word', style: 'font-family:var(--f-ui)' }, w.g), say: null, optTx: true };
-    case 'listen': return { prompt: 'Listen. What does the word mean?', main: h('button', { class: 'btn small', type: 'button', onclick: () => say(w.w, L.voice.prefix, { rate: 0.8 }) }, 'Play the word again'), say: w.w, optTx: false, autoplay: true };
+    case 'listen': return { prompt: 'Listen. What does the word mean?', main: h('button', { class: 'btn small', type: 'button', onclick: () => play(w.w, null, true) }, 'Play the word again, slowly'), say: w.w, optTx: false, autoplay: true };
     case 'cloze': {
       const s = deck.sentences[it.sent];
       return { prompt: 'Choose the word that fits the gap.', main: h('div', {}, h('p', { class: 'sent' }, it.pre, h('span', { class: 'blank' }, ' '), it.post), h('p', { class: 'note' }, s.e)), say: null, optTx: true };
     }
     case 'gender': return { prompt: L.genderPrompt, main: h('div', {}, h('p', { class: 'big-word' }, w.w), h('p', { class: 'note' }, w.g)), say: w.w, optTx: false, label: gtext };
     case 'form': return { prompt: it.ask.charAt(0).toUpperCase() + it.ask.slice(1) + '. Which form is it?', main: h('div', {}, h('p', { class: 'big-word' }, it.prompt), h('p', { class: 'note' }, w.g)), say: w.w, optTx: true };
+    case 'note': return { prompt: `From the note “${deck.notes[it.n].title}”`, main: h('p', { class: 'sent', style: 'font-family:var(--f-ui);font-size:1.15rem;font-weight:400' }, it.ask), say: null, optTx: false };
     default: return { prompt: '', main: h('p', {}, it.k), say: null, optTx: false };
   }
 }
@@ -142,7 +150,7 @@ function showQuestion(id) {
     const correct = picked === it.answer;
     S.answer(id, correct);
     round.done++;
-    if (correct) round.right++; else round.missed.push(it.i);
+    if (correct) round.right++; else if (it.i != null) round.missed.push(it.i);
     btns.forEach(({ b, o, mark }) => { b.setAttribute('aria-disabled', 'true'); if (o === it.answer) { b.classList.add('right'); mark.textContent = '✓ right'; } else if (o === picked) { b.classList.add('wrong'); mark.textContent = '✗ not this one'; } });
     skip.remove();
     fb.append(feedback(it, w, correct, picked), h('button', { class: 'btn', type: 'button', onclick: () => { stop(); advance(); } }, 'Next'));
@@ -158,22 +166,23 @@ function showQuestion(id) {
   }
   const skip = h('button', { class: 'btn ghost small', type: 'button', onclick: () => finishQ(null) }, 'I don’t know');
   chrome(h('main', {}, progressEl(), box, choices, skip, fb), { withTabs: false });
-  if (q.autoplay && canSound()) say(w.w, L.voice.prefix, { rate: 0.8 });
-  else if (State.s.autoRead && q.say && it.k !== 'listen') say(q.say, L.voice.prefix);
+  if (q.autoplay && canSound()) play(w.w);
+  else if (State.s.autoRead && q.say && it.k !== 'listen') play(q.say);
 }
 
 function feedback(it, w, correct, picked) {
+  if (it.k === 'note') return noteFeedback(it, correct, picked);
   const f = h('div', { class: 'fb ' + (correct ? 'good' : 'bad') });
   f.append(h('p', {}, h('b', { class: correct ? 'good' : 'bad' }, correct ? '✓ Right.' : picked == null ? '✗ Here is the answer.' : '✗ Not quite.')));
   const ans = it.k === 'gender' ? gtext(it.answer) : it.answer;
   if (!correct) f.append(h('p', {}, 'The answer is ', h('b', { class: it.k === 'read' || it.k === 'listen' || it.k === 'gender' ? '' : 'tx' }, ans), '.'));
-  if (it.k === 'cloze') { const s = deck.sentences[it.sent]; f.append(withSpeaker(h('p', { class: 'tx' }, it.pre + it.answer + it.post), s.t), h('p', { class: 'note' }, s.e)); }
+  if (it.k === 'cloze') { const s = deck.sentences[it.sent]; f.append(withSpeaker(h('p', { class: 'tx' }, it.pre + it.answer + it.post), s.t, ['s', s.id]), h('p', { class: 'note' }, s.e), A.isHuman('s', s.id) ? creditLine('s', s.id) : null); }
   else if (it.k === 'form') f.append(h('p', {}, h('span', { class: 'tx' }, `${it.prompt} → ${it.answer}`), ' ', h('span', { class: 'note' }, `(${it.ask})`)));
   else f.append(withSpeaker(h('p', {}, h('span', { class: 'tx' }, w.w), ' = ', w.g), w.w));
   f.append(h('button', { class: 'btn ghost small', type: 'button', onclick: () => openWord(it.i) }, 'See the whole word'));
   return f;
 }
-function afterSpeak(it, w) { if (!canSound()) return; say(it.k === 'cloze' ? it.pre + it.answer + it.post : it.k === 'form' ? it.answer : w.w, L.voice.prefix); }
+function afterSpeak(it, w) { if (!canSound() || it.k === 'note') return; if (it.k === 'cloze') { const s = deck.sentences[it.sent]; play(s.t, ['s', s.id]); } else play(it.k === 'form' ? it.answer : w.w); }
 
 function finish() {
   const r = round; stop();
@@ -188,14 +197,14 @@ function finish() {
 const wordRow = (i) => { const w = deck.words[i]; return h('li', { onclick: () => openWord(i) }, h('div', {}, h('div', { class: 'w' }, w.w), h('div', { class: 'g' }, w.g))); };
 
 // ── tabs ──
-const TABS = [['today', 'Today'], ['course', 'Course'], ['words', 'Words'], ['settings', 'Settings']];
+const TABS = [['today', 'Today'], ['course', 'Course'], ['words', 'Words'], ['notes', 'Notes'], ['settings', 'Settings']];
 const tabsEl = () => h('nav', { class: 'tabs', 'aria-label': 'Main' }, ...TABS.map(([id, label]) => h('button', { type: 'button', 'aria-current': tab === id ? 'page' : null, onclick: () => { tab = id; render(); } }, h('span', { html: id === 'settings' ? ICON.gear : ICON[id] }), label)));
 
 function render() {
   if (round) return show();
   applyLook();
   const main = h('main', {});
-  ({ today: todayScreen, course: courseScreen, words: wordsScreen, settings: settingsScreen })[tab](main);
+  ({ today: todayScreen, course: courseScreen, words: wordsScreen, notes: notesScreen, settings: settingsScreen })[tab](main);
   chrome(main);
 }
 
@@ -208,6 +217,8 @@ function todayScreen(m) {
     h('p', {}, `A round is ${State.s.sitting} questions. ${c.due ? `${c.due} are ready to review.` : 'Nothing is due, so a round will be mostly new.'}`),
     h('button', { class: 'btn', type: 'button', onclick: () => startRound() }, 'Start a round'),
     h('div', { class: 'stats' }, stat(c.known, 'words known'), stat(c.due, 'due to review'), stat(log.n, 'answered today'))));
+  const next = nextNote();
+  if (next) m.append(h('div', { class: 'card' }, h('h2', {}, `A note to read: ${deck.notes[next].title}`), h('p', { class: 'note' }, `${KIND[deck.notes[next].kind]}. A short reading. Questions about it join your rounds after you read it.`), h('button', { class: 'btn ghost', type: 'button', onclick: () => noteSheet(next) }, 'Read it')));
   const ladderItems = deck.items.filter((it) => it.k === 'form');
   const open = ladderItems.filter((it) => S.met(it.id) || S.wordStarted(it.i) || State.data.seen[it.i]).length;
   m.append(h('div', { class: 'card' }, h('h2', {}, `Practise: ${deck.ladder.title}`), h('p', { class: 'note' }, deck.ladder.intro),
@@ -216,6 +227,46 @@ function todayScreen(m) {
   if (!State.persistent) m.append(h('div', { class: 'card' }, h('p', { class: 'note' }, 'This browser is not saving your progress. Settings has a backup button.')));
 }
 const stat = (v, l) => h('div', { class: 'stat' }, h('b', {}, n(v)), h('span', {}, l));
+
+// ── notes: culture, history and language readings ──
+const KIND = { culture: 'Culture', history: 'History', language: 'Language' };
+const noteStatus = (i) => (S.startedCount() < deck.notes[i].gate ? 'locked' : S.noteRead(deck.notes[i].id) ? 'read' : 'new');
+const nextNote = () => { let best = null; deck.notes.forEach((n, i) => { if (noteStatus(i) === 'new' && (best == null || n.gate < deck.notes[best].gate)) best = i; }); return best; };
+
+function noteFeedback(it, correct, picked) {
+  const nt = deck.notes[it.n];
+  const f = h('div', { class: 'fb ' + (correct ? 'good' : 'bad') });
+  f.append(h('p', {}, h('b', { class: correct ? 'good' : 'bad' }, correct ? '✓ Right.' : picked == null ? '✗ Here is the answer.' : '✗ Not quite.')));
+  if (!correct) f.append(h('p', {}, 'The answer is ', h('b', {}, it.answer), '.'));
+  f.append(h('p', {}, nt.claims[it.claim]), h('button', { class: 'btn ghost small', type: 'button', onclick: () => noteSheet(it.n) }, 'Read the note again'));
+  return f;
+}
+
+function noteSheet(i) {
+  const nt = deck.notes[i];
+  sheet((close) => {
+    const body = h('div', {}, h('p', {}, h('span', { class: 'chip' }, KIND[nt.kind])), h('h2', {}, nt.title));
+    for (const c of nt.claims) body.append(h('p', { style: 'font-size:1.05rem' }, c));
+    if (nt.terms.length) body.append(h('p', { class: 'prompt' }, 'Words from this note'), h('div', {}, ...nt.terms.map((t) => h('div', { class: 'row', style: 'margin:4px 0' }, h('span', { class: 'tx', style: 'font-size:1.15rem' }, t), speak(t, ['w', t], { slowToo: false })))));
+    body.append(h('p', { class: 'note', style: 'margin-top:14px' }, 'Written from the English Wikipedia article “', h('a', { href: nt.source.url, target: '_blank', rel: 'noopener' }, nt.source.title), `”, revision ${nt.source.revid} (${nt.source.license}). Every sentence is quoted from that article.`));
+    body.append(h('button', { class: 'btn ghost', type: 'button', onclick: () => { stop(); say(nt.claims.join(' '), 'en', { rate: 0.95 }); } }, 'Read the note aloud (your phone’s English voice)'));
+    body.append(h('button', { class: 'btn', type: 'button', onclick: () => { stop(); S.markNoteRead(nt.id); close(); render(); } }, S.noteRead(nt.id) ? 'Done' : 'I have read this'));
+    return body;
+  });
+}
+
+function notesScreen(m) {
+  const started = S.startedCount();
+  m.append(h('h1', {}, 'Notes'), h('p', { class: 'note' }, 'Short readings about culture, history and the language. Each is written from a Wikipedia article, and every sentence is quoted from it. A note opens as you learn words. Questions about a note join your rounds after you read it.'));
+  for (const kind of ['culture', 'history', 'language']) {
+    m.append(h('h2', { style: 'margin-top:18px' }, KIND[kind]));
+    deck.notes.map((n, i) => i).filter((i) => deck.notes[i].kind === kind).sort((a, b) => deck.notes[a].gate - deck.notes[b].gate).forEach((i) => {
+      const n = deck.notes[i], st = noteStatus(i);
+      m.append(h('button', { class: 'card', type: 'button', style: 'width:100%;text-align:left;display:block;opacity:' + (st === 'locked' ? '.7' : '1'), onclick: () => (st === 'locked' ? sheet(() => h('div', {}, h('h2', {}, n.title), h('p', {}, `This note opens when you have started ${n.gate} words. You have started ${started}.`))) : noteSheet(i)) },
+        h('div', { class: 'row split' }, h('b', {}, n.title), h('span', { class: 'chip' }, st === 'locked' ? `Opens at ${n.gate} words` : st === 'read' ? 'Read' : 'New'))));
+    });
+  }
+}
 
 function courseScreen(m) {
   const st = S.stageState();
@@ -260,8 +311,10 @@ function settingsScreen(m) {
       row('New questions in a round', 'The rest are reviews.', seg(String(s.newPerRound), [['6', '6'], ['9', '9'], ['14', '14']], (v) => set('newPerRound', Number(v)))),
       row('Teaching cards', 'Show a card with the meaning, sound and examples before a new word.', seg(s.teach ? 'on' : 'off', [['on', 'On'], ['off', 'Off']], (v) => set('teach', v === 'on')))),
     h('div', { class: 'card' }, h('h2', {}, 'Sound'),
-      row('Read aloud automatically', canSound() ? `Uses your phone’s ${L.voice.label} voice. It is a machine voice, not a recording. There is also a speaker button on every card.` : `This phone has no ${L.voice.label} voice, so there is nothing to read aloud.`, seg(s.autoRead ? 'on' : 'off', [['off', 'Off'], ['on', 'On']], (v) => set('autoRead', v === 'on'))),
-      h('p', { class: 'note' }, canSound() ? `Voice found: ${(window.speechSynthesis.getVoices().find((v) => v.lang?.toLowerCase().replace('_', '-').startsWith(L.voice.prefix)) || {}).name}.` : '')),
+      h('p', { class: 'note' }, A.hasClips() ? 'Every word and example sentence has a clip. A recording by a real person is used when there is one. If not, a computer voice made for this app is used. The phone’s own voice is the last choice.' : (A.canHear(L.voice.prefix) ? 'There are no clips yet. The phone’s own voice is used. It is a machine voice.' : `This device has no ${L.voice.label} voice and the app has no clips, so nothing can be read aloud.`)),
+      row('Speed', 'Slower speech helps with new sounds. Every speaker button also has a Slow button.', seg(String(s.speed || 1), [['1', 'Normal'], ['0.8', 'Slow'], ['0.65', 'Very slow']], (v) => set('speed', Number(v)))),
+      row('Read aloud automatically', 'Say each new word, and each answer, without pressing the speaker button.', seg(s.autoRead ? 'on' : 'off', [['off', 'Off'], ['on', 'On']], (v) => set('autoRead', v === 'on'))),
+      A.hasClips() ? row('Keep the audio for offline use', 'Saves every clip on this device, so it works without a connection.', offlineButton()) : null),
     h('div', { class: 'card' }, h('h2', {}, 'Where you start'),
       row('I already know the first…', 'Skipped stages are not asked as new questions. You can still look up any word.',
         (() => { const sel = h('select', { 'aria-label': 'Stages to skip', onchange: () => set('floor', Number(sel.value)) }, ...deck.stages.slice(0, -1).map((st, k) => h('option', { value: k }, k === 0 ? 'Nothing. I am starting from the beginning.' : `The first ${k} stage${k > 1 ? 's' : ''} (${n(deck.stages.slice(0, k).reduce((a, x) => a + x.words.length, 0))} words)`))); sel.value = String(s.floor || 0); return sel; })())),
@@ -273,6 +326,25 @@ function settingsScreen(m) {
     h('div', { class: 'card' }, h('h2', {}, 'Install'),
       installPrompt ? h('button', { class: 'btn', type: 'button', onclick: async () => { installPrompt.prompt(); await installPrompt.userChoice; installPrompt = null; render(); } }, `Install ${L.app}`) : h('p', { class: 'note' }, 'To install: open the browser menu and choose “Install app” or “Add to Home screen”. If it says the app is already installed, open it from your home screen.'),
       h('button', { class: 'btn ghost', type: 'button', onclick: aboutSheet }, `About ${L.app} and its sources`)));
+}
+
+// Save every clip into the service worker's cache so the app speaks offline. Progress is a count, not a timer.
+function offlineButton() {
+  const files = A.allClipFiles();
+  const note = h('p', { class: 'note' }, '');
+  const btn = h('button', { class: 'btn ghost', type: 'button', onclick: async () => {
+    if (!('caches' in window)) { note.textContent = 'This browser cannot keep files offline.'; return; }
+    btn.disabled = true;
+    const cache = await caches.open(L.slug + '-audio');
+    let done = 0, bad = 0;
+    const queue = [...files];
+    await Promise.all(Array.from({ length: 4 }, async () => {
+      while (queue.length) { const f = queue.shift(); try { if (!(await cache.match(f))) { const r = await fetch(f); if (r.ok) await cache.put(f, r); else bad++; } } catch { bad++; } note.textContent = `Saved ${++done} of ${files.length} clips.`; }
+    }));
+    note.textContent = bad ? `Saved ${files.length - bad} of ${files.length} clips. ${bad} could not be fetched.` : `All ${files.length} clips are saved on this device.`;
+    btn.disabled = false;
+  } }, `Save ${n(files.length)} clips`);
+  return h('div', {}, btn, note);
 }
 
 function exportBackup() {
@@ -313,6 +385,7 @@ async function start() {
   if (!r.ok) throw new Error('The word list did not load.');
   deck = await r.json(); L = deck.lang;
   S.setDeck(deck);
+  await A.loadAudio();
   document.title = `${L.app} — learn ${L.name}`;
   applyLook();
   onVoices(() => { if (!round && (tab === 'today' || tab === 'settings')) render(); });

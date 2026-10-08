@@ -8,7 +8,7 @@
 // Distractors (wrong answers) are real words or forms taken from other entries, never invented.
 // build/verify.mjs re-derives every answer from the corpus and fails the build if one differs.
 
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
@@ -16,6 +16,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).href);
 const WORDS = JSON.parse(readFileSync(join(ROOT, 'corpus', 'words.json'), 'utf8'));
 const SENTS = JSON.parse(readFileSync(join(ROOT, 'corpus', 'sentences.json'), 'utf8'));
+
+// sentences a real person has recorded (corpus/audio-ok.json, from build/probe-audio.mjs), if that has been run
+const recorded = new Set(existsSync(join(ROOT, 'corpus', 'audio-ok.json')) ? JSON.parse(readFileSync(join(ROOT, 'corpus', 'audio-ok.json'), 'utf8')).map((x) => x.id) : []);
 
 // a small seeded random source, so the same corpus always gives the same deck
 let seed = 20261008;
@@ -39,7 +42,8 @@ const useSentence = (i) => { if (!sentSlot.has(i)) { sentSlot.set(i, sentences.l
 const examples = {};                                        // word index -> [sentence slot]
 const clozeOf = new Map();                                  // word index -> sentence index (for the gap question)
 words.forEach((w, i) => {
-  const hits = (sentIdx.get(w.w) || []).filter((s) => SENTS[s].tokens.length <= 9).sort((a, b) => SENTS[a].t.length - SENTS[b].t.length);
+  // a sentence a real person has recorded comes first (build/probe-audio.mjs), then the shortest
+  const hits = (sentIdx.get(w.w) || []).filter((s) => SENTS[s].tokens.length <= 9).sort((a, b) => (recorded.has(SENTS[b].id) - recorded.has(SENTS[a].id)) || SENTS[a].t.length - SENTS[b].t.length);
   const take = hits.slice(0, 2);
   if (take.length) { examples[i] = take.map(useSentence); clozeOf.set(i, take[0]); }
 });
@@ -105,8 +109,9 @@ if (LANG.id === 'da') {
   for (const [w, i] of top) {
     for (const [ri, [slot, label]] of LANG.ladder.slots.entries()) {
       const answer = w.decl[slot][0];
-      const own = Object.entries(w.decl).filter(([s]) => s !== slot).map(([, f]) => f[0]).filter((f) => f !== answer);
-      const others = nouns.filter(([, j]) => j !== i).map(([x]) => x.decl[slot][0]).filter((f) => f && f !== answer && !own.includes(f));
+      const isForm = (f) => typeof f === 'string' && /\p{L}/u.test(f);           // a table cell can hold a dash for a form that does not exist
+      const own = Object.entries(w.decl).filter(([s]) => s !== slot).map(([, f]) => f[0]).filter((f) => isForm(f) && f !== answer);
+      const others = nouns.filter(([, j]) => j !== i).map(([x]) => x.decl[slot][0]).filter((f) => isForm(f) && f !== answer && !own.includes(f));
       const opts = [...new Set([...pickN([...new Set(own)], 2), ...pickN(others, 3)])].slice(0, 3);
       if (opts.length < 3) continue;
       items.push({ id: `dc/${w.w}/${slot}`, k: 'form', i, rung: ri, stage: Math.min(cuts.length - 1, w.stage + Math.floor(ri / 2)), answer, prompt: w.w, ask: label, options: shuffle([answer, ...opts]), level: 3 + ri });
@@ -114,8 +119,14 @@ if (LANG.id === 'da') {
   }
 }
 
+// ── notes: culture, history and language readings, each from a saved Wikipedia article (build/verify-notes.mjs) ──
+const { NOTES } = await import(pathToFileURL(join(ROOT, 'content', 'notes.mjs')).href);
+const { loadSource } = await import(pathToFileURL(join(ROOT, 'build', 'verify-notes.mjs')).href);
+const notes = NOTES.map((n) => { const src = loadSource(n.src).meta; return { id: n.id, kind: n.kind, title: n.title, gate: n.gate, terms: n.terms || [], claims: n.claims.map((c) => c.t), source: { title: src.title, revid: src.revid, url: src.url, license: src.license } }; });
+NOTES.forEach((n, ni) => n.quiz.forEach((q, k) => items.push({ id: `nq/${n.id}/${k}`, k: 'note', n: ni, stage: stageOfRank(n.gate + 1), claim: q.claim, ask: q.ask, answer: q.answer, options: shuffle([q.answer, ...q.wrong]), level: 3 })));
+
 mkdirSync(join(ROOT, 'app', 'data'), { recursive: true });
-const deck = { built: new Date().toISOString().slice(0, 10), lang: { id: LANG.id, app: LANG.app, slug: LANG.slug, name: LANG.name, native: LANG.native, voice: LANG.voice, genders: LANG.genders, genderPrompt: LANG.genderPrompt, genderHelp: LANG.genderHelp, pronNote: LANG.pronNote, themes: LANG.themes }, stages, words, sentences, examples, ladder, items };
+const deck = { built: new Date().toISOString().slice(0, 10), lang: { id: LANG.id, app: LANG.app, slug: LANG.slug, name: LANG.name, native: LANG.native, voice: LANG.voice, genders: LANG.genders, genderPrompt: LANG.genderPrompt, genderHelp: LANG.genderHelp, pronNote: LANG.pronNote, themes: LANG.themes }, stages, words, sentences, examples, ladder, notes, items };
 writeFileSync(join(ROOT, 'app', 'data', 'deck.json'), JSON.stringify(deck));
 const by = {};
 for (const it of items) by[it.k] = (by[it.k] || 0) + 1;
