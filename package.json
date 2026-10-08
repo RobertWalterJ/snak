@@ -1,0 +1,15 @@
+{
+  "name": "snak",
+  "version": "0.1.0",
+  "description": "Snak — learn Danish with short rounds of spaced questions.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "corpus": "node build/extract.mjs && node build/words.mjs && node build/sentences.mjs",
+    "deck": "node build/items.mjs",
+    "verify": "node build/verify.mjs",
+    "check": "node build/items.mjs && node build/verify.mjs && node build/test-verify.mjs && node build/audit-colour.mjs && node build/test-sched.mjs",
+    "dev": "node build/serve.mjs"
+  },
+  "devDependencies": { "sharp": "^0.35.5" }
+}
