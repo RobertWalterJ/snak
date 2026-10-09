@@ -9,10 +9,10 @@
 // build/make-deploy.mjs stamps the build and the list of hashed files below.
 
 const PREFIX = 'snak-';
-const BUILD = "0.2.0-7a2e95a41d";                                    // stamped per deploy
+const BUILD = "0.2.1-3408e3db4b";                                    // stamped per deploy
 const NAME = PREFIX + 'v-' + BUILD;
 const AUDIO = PREFIX + 'audio';
-const SHELL = ["./","style.cac3fe1d02.css","app.cc834062cc.js","data/deck.2d65ed08c6.json","data/audio.c6231d826f.json","icons/icon-192.png","icons/icon-512.png","fonts/atkinson-hyperlegible-latin-400.woff2","fonts/atkinson-hyperlegible-latin-700.woff2","fonts/atkinson-hyperlegible-latin-ext-400.woff2","fonts/atkinson-hyperlegible-latin-ext-700.woff2","fonts/fonts.css","fonts/fraunces-latin-ext.woff2","fonts/fraunces-latin.woff2"];                                   // filled in per deploy
+const SHELL = ["./","style.cac3fe1d02.css","app.091515827c.js","data/deck.ee1d0bdf2a.json","data/audio.3312daef9e.json","icons/icon-192.png","icons/icon-512.png","fonts/atkinson-hyperlegible-latin-400.woff2","fonts/atkinson-hyperlegible-latin-700.woff2","fonts/atkinson-hyperlegible-latin-ext-400.woff2","fonts/atkinson-hyperlegible-latin-ext-700.woff2","fonts/fonts.css","fonts/fraunces-latin-ext.woff2","fonts/fraunces-latin.woff2"];                                   // filled in per deploy
 
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(NAME).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
