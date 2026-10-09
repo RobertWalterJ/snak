@@ -21,7 +21,6 @@ const FILES = {
   [`${code}_sentences.tsv.bz2`, `${T}/${code}/${code}_sentences.tsv.bz2`],
   [`${code}-eng_links.tsv.bz2`, `${T}/${code}/${code}-eng_links.tsv.bz2`],
   ['eng_sentences.tsv.bz2', `${T}/eng/eng_sentences.tsv.bz2`],
-  ['sentences_with_audio.tar.bz2', 'https://downloads.tatoeba.org/exports/sentences_with_audio.tar.bz2'],
 ]);
 mkdirSync(join(ROOT, 'sources'), { recursive: true });
 for (const [name, url] of FILES) {

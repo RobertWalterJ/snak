@@ -17,8 +17,6 @@ const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).h
 const WORDS = JSON.parse(readFileSync(join(ROOT, 'corpus', 'words.json'), 'utf8'));
 const SENTS = JSON.parse(readFileSync(join(ROOT, 'corpus', 'sentences.json'), 'utf8'));
 
-// sentences a real person has recorded (corpus/audio-ok.json, from build/probe-audio.mjs), if that has been run
-const recorded = new Set(existsSync(join(ROOT, 'corpus', 'audio-ok.json')) ? JSON.parse(readFileSync(join(ROOT, 'corpus', 'audio-ok.json'), 'utf8')).map((x) => x.id) : []);
 
 // a small seeded random source, so the same corpus always gives the same deck
 let seed = 20261008;
@@ -42,8 +40,7 @@ const useSentence = (i) => { if (!sentSlot.has(i)) { sentSlot.set(i, sentences.l
 const examples = {};                                        // word index -> [sentence slot]
 const clozeOf = new Map();                                  // word index -> sentence index (for the gap question)
 words.forEach((w, i) => {
-  // a sentence a real person has recorded comes first (build/probe-audio.mjs), then the shortest
-  const hits = (sentIdx.get(w.w) || []).filter((s) => SENTS[s].tokens.length <= 9).sort((a, b) => (recorded.has(SENTS[b].id) - recorded.has(SENTS[a].id)) || SENTS[a].t.length - SENTS[b].t.length);
+  const hits = (sentIdx.get(w.w) || []).filter((s) => SENTS[s].tokens.length <= 9).sort((a, b) => SENTS[a].t.length - SENTS[b].t.length);
   const take = hits.slice(0, 2);
   if (take.length) { examples[i] = take.map(useSentence); clozeOf.set(i, take[0]); }
 });

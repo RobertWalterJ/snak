@@ -14,7 +14,7 @@ installs to the home screen. Free, open source, and made for a beginner.
   scheduled by FSRS. A round is never cut short, and there is always an "Another round" button.
 - **A new-word card** before each new word: meaning, sound (with a Slow button), the pronunciation, forms, and example sentences.
 - **Question kinds:** meaning, recall, listening, fill the gap, gender, and a ladder for the hard part of Danish (verb forms: present, past and past participle).
-- **Sound, best source first:** a recording by a real person (credited by name), then a computer voice made for the app
+- **Sound, best source first:** a single-word recording by a real person (credited by name), then a computer voice made for the app
   (Piper), then your phone's own voice. Every speaker has a **Slow** button; Settings has Normal, Slow and Very slow, and can
   keep every clip on the device for offline use.
 - **Notes:** 14 readings on culture, history and the language. Every sentence is quoted from a named, dated Wikipedia
@@ -35,7 +35,7 @@ learners over 60 days against the real scheduler (a round is never short; a casu
 node build/fetch-sources.mjs   # download the open data into sources/
 npm run corpus                 # words, glosses, sentences (corpus/)
 npm run notes                  # save the Wikipedia articles the notes quote
-npm run audio                  # find and download the real-person recordings
+npm run audio                  # find and download the real-person word recordings
 npm run deck                   # build app/data/deck.json
 npm run check                  # verify everything
 npm run dev                    # serve app/ on localhost
@@ -60,8 +60,7 @@ Without clips the app still works and uses the phone's voice.
 - **Code:** MIT (see LICENSE).
 - **Word list, questions and notes:** made from English Wiktionary, Tatoeba and Wikipedia, so they are shared under
   **CC BY-SA 4.0** with the credits in [CREDITS.md](CREDITS.md).
-- **Recordings:** each by its own speaker and licence, listed in CREDITS.md. Some Tatoeba recordings are CC BY-NC-ND, so they
-  are shared unmodified, credited, and for non-commercial use only.
+- **Recordings:** a few single words are spoken by real people, each by its own speaker and licence (CC0, CC BY, CC BY-SA or public domain), copied from the file's own Wikimedia Commons page and listed in CREDITS.md.
 - **Computer voice:** Piper, with a voice trained on open data (see CREDITS.md).
 
 ## Danish notes
@@ -71,8 +70,10 @@ Without clips the app still works and uses the phone's voice.
 
 ## Honest limits
 
-- Real recordings are few. Most clips are a computer voice, which is flat and speaks single words without context. Please tell
-  me which pronunciations sound wrong.
+- Real recordings are few: only single words, and no sentences (an earlier version attached recordings that belonged to other
+  languages' sentences; that was a bug, it is fixed, and `build/verify-audio.mjs` now checks every recording's file name against
+  its word). Everything else is a computer voice, which is flat and speaks single words without context. Please tell me which
+  pronunciations sound wrong.
 - Gap questions can have more than one grammatical answer; the English translation is shown to settle it.
 - No level check (there is a "skip the first stages" choice), no conversations, no speaking practice.
 - Tested in a browser at phone width; not yet on many real devices.

@@ -3,7 +3,7 @@
 //   node build/make-credits.mjs
 //
 // Credits are generated, not typed, so they cannot drift from the deck: the speakers come from
-// app/data/audio-human.json, the articles from app/data/deck.json.
+// app/data/audio-human.json (taken from each file's own Wikimedia Commons page), the articles from app/data/deck.json.
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -13,7 +13,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const { LANG } = await import(pathToFileURL(join(ROOT, 'content', 'lang.mjs')).href);
 const deck = JSON.parse(readFileSync(join(ROOT, 'app', 'data', 'deck.json'), 'utf8'));
 const man = JSON.parse(readFileSync(join(ROOT, 'app', 'data', 'audio.json'), 'utf8'));
-const human = existsSync(join(ROOT, 'app', 'data', 'audio-human.json')) ? JSON.parse(readFileSync(join(ROOT, 'app', 'data', 'audio-human.json'), 'utf8')) : { w: {}, s: {} };
+const human = existsSync(join(ROOT, 'app', 'data', 'audio-human.json')) ? JSON.parse(readFileSync(join(ROOT, 'app', 'data', 'audio-human.json'), 'utf8')) : { w: {} };
 const piper = { da: ['da_DK-talesyntese-medium', 'Danish', 'trained on a recording set from the Norwegian National Library (Språkbanken), CC0', 'https://huggingface.co/rhasspy/piper-voices/tree/main/da/da_DK/talesyntese/medium'],
   is: ['is_IS-salka-medium', 'Icelandic', 'trained on Talrómur, a speech corpus from Reykjavík University, CC BY 4.0', 'https://huggingface.co/rhasspy/piper-voices/tree/main/is/is_IS/salka/medium'] }[LANG.id];
 const enc = (f) => encodeURIComponent(f.replace(/ /g, '_')).replace(/%2F/g, '/');
@@ -40,33 +40,19 @@ for (const n of deck.notes) P(`- **${n.title}** (${n.kind}): [${n.source.title}]
 P();
 P('## Recordings by real people');
 P();
-const hw = Object.entries(human.w), hs = Object.entries(human.s);
-P(`${hw.length} words and ${hs.length} example sentences are spoken by real people. The app credits the speaker on the card each time a clip is played.`);
+const hw = Object.entries(human.w);
+P(`${hw.length} single words are spoken by real people. The app names the speaker on the card. Every sentence is the computer voice: there are no usable recordings of whole sentences in ${LANG.name}.`);
 P();
-P('### Words (Wikimedia Commons)');
+P('Each file is on Wikimedia Commons. The speaker and licence below are copied from the file\'s own page, so the file page is the authority. Most are Lingua Libre recordings.');
 P();
-P('Each file is on Wikimedia Commons under a free licence; the file page names the speaker and licence. Most are Lingua Libre recordings.');
-P();
-P('| Word | Speaker | Source file |');
-P('|---|---|---|');
-for (const [word, c] of hw.sort((a, b) => a[0].localeCompare(b[0]))) P(`| ${word} | ${c.by} | [${c.file}](https://commons.wikimedia.org/wiki/File:${enc(c.file)}) |`);
-P();
-P('### Sentences (Tatoeba)');
-P();
-P('Recorded by Tatoeba contributors under the licence shown (CC BY-NC-ND 3.0, CC BY-NC 4.0, CC BY 4.0 or CC BY-SA 4.0). The NC and ND licences allow sharing the unmodified clips, with credit, for non-commercial use. They are kept unmodified.');
-P();
-P('| Sentence | Speaker | Licence |');
-P('|---|---|---|');
-for (const [id, c] of hs.sort((a, b) => Number(a[0]) - Number(b[0]))) P(`| [${id}](https://tatoeba.org/en/sentences/show/${id}) | ${c.by} | ${c.lic} |`);
+P('| Word | Speaker | Licence | Source file |');
+P('|---|---|---|---|');
+for (const [word, c] of hw.sort((a, b) => a[0].localeCompare(b[0]))) P(`| ${word} | ${c.by} | ${c.lic || 'see the file page'} | [${c.file}](https://commons.wikimedia.org/wiki/File:${enc(c.file)}) |`);
 P();
 P('## Computer voice');
 P();
 const pw = Object.values(man.w).filter((c) => c.k === 'p').length, ps = Object.values(man.s).filter((c) => c.k === 'p').length;
-P(`${pw} word clips and ${ps} sentence clips are made with [Piper](https://github.com/OHF-Voice/piper1-gpl) (MIT${'/'}GPL, text-to-speech) using the ${piper[1]} voice [${piper[0]}](${piper[3]}), ${piper[2]}. These clips are a machine voice, and the app says so.`);
-P();
-P('## Not used on purpose');
-P();
-P('Tatoeba recordings by one contributor who recorded thousands of sentences in languages they do not speak are left out, because they may not be recordings by a native speaker.');
+P(`${pw} word clips and ${ps} sentence clips are made with [Piper](https://github.com/OHF-Voice/piper1-gpl) (text-to-speech) using the ${piper[1]} voice [${piper[0]}](${piper[3]}), ${piper[2]}. These clips are a machine voice, and the app says so.`);
 P();
 writeFileSync(join(ROOT, 'CREDITS.md'), out.join('\n'));
-console.log(`CREDITS.md: ${deck.notes.length} articles, ${hw.length} word recordings, ${hs.length} sentence recordings`);
+console.log(`CREDITS.md: ${deck.notes.length} articles, ${hw.length} word recordings`);

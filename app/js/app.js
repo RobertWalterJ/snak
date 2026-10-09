@@ -37,7 +37,7 @@ const toggleScheme = () => { State.set('scheme', effDark ? 'light' : 'dark'); ap
 
 // ── speaking ──
 // A speaker button and a Slow button, shown only if there is a recording, a computer-voice clip or a phone voice.
-// ref = ['w', word] (the default, keyed by the text) or ['s', Tatoeba sentence id].
+// ref = ['w', word] (the default, keyed by the text) or ['s', sentence id].
 const play = (text, ref, slow = false) => A.play(ref?.[0] || 'w', ref?.[1] ?? text, text, L.voice.prefix, { slow });
 function speak(text, ref = null, { slowToo = true, big = false } = {}) {
   if (!canSound()) return null;
@@ -390,7 +390,7 @@ function aboutSheet() {
     h('h2', {}, `${L.app}`),
     h('p', { class: 'note' }, `Version ${window.APP_BUILD?.v || 'dev'}${window.APP_BUILD?.commit ? ' (' + window.APP_BUILD.commit + ')' : ''}, built ${window.APP_BUILD?.date || deck.built}. ${n(deck.words.length)} words, ${n(deck.items.length)} questions.`),
     h('p', {}, 'Word meanings, genders, sounds and word forms come from English Wiktionary (CC BY-SA 4.0), through kaikki.org. Example sentences come from Tatoeba and its contributors (CC BY 2.0 FR). Word order by frequency comes from the OpenSubtitles-based FrequencyWords list (CC BY-SA 4.0).'),
-    h('p', {}, 'Recordings by real people come from Wikimedia Commons (Lingua Libre and others) and Tatoeba, and each is credited to its speaker. The computer voice is Piper.'),
+    h('p', {}, 'Some single words are recorded by real people, from Wikimedia Commons (Lingua Libre and others), and each is credited to its speaker. Everything else, including every sentence, is a computer voice (Piper).'),
     h('p', {}, 'A few meanings for the commonest function words were checked by hand because Wiktionary lists a rare meaning first. Wrong answers are real words taken from other entries.'),
     h('p', { class: 'note' }, 'The scheduler is FSRS (ts-fsrs, MIT). Fonts: Atkinson Hyperlegible and Fraunces (SIL OFL).')));
 }

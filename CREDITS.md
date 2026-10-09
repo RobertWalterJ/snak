@@ -31,222 +31,113 @@ Each note is written only from the English Wikipedia article named here, at the 
 
 ## Recordings by real people
 
-99 words and 97 example sentences are spoken by real people. The app credits the speaker on the card each time a clip is played.
+100 single words are spoken by real people. The app names the speaker on the card. Every sentence is the computer voice: there are no usable recordings of whole sentences in Danish.
 
-### Words (Wikimedia Commons)
+Each file is on Wikimedia Commons. The speaker and licence below are copied from the file's own page, so the file page is the authority. Most are Lingua Libre recordings.
 
-Each file is on Wikimedia Commons under a free licence; the file page names the speaker and licence. Most are Lingua Libre recordings.
-
-| Word | Speaker | Source file |
-|---|---|---|
-| æble | a Wikimedia Commons contributor | [Da-æble.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6ble.ogg) |
-| æg | a Wikimedia Commons contributor | [Da-æg.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6g.ogg) |
-| ægteskab | a Wikimedia Commons contributor | [Da-ægteskab.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6gteskab.ogg) |
-| ærlig | a Wikimedia Commons contributor | [Da-ærlig.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6rlig.ogg) |
-| ah | Huggywuggyy | [LL-Q9035 (dan)-Huggywuggyy-ah.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-ah.wav) |
-| andel | Huggywuggyy | [LL-Q9035 (dan)-Huggywuggyy-andel.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-andel.wav) |
-| barn | EskildDood | [LL-Q9035 (dan)-EskildDood-barn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-barn.wav) |
-| behandling | a Wikimedia Commons contributor | [Da-behandling.ogg](https://commons.wikimedia.org/wiki/File:Da-behandling.ogg) |
-| behøve | a Wikimedia Commons contributor | [Da-behøve.ogg](https://commons.wikimedia.org/wiki/File:Da-beh%C3%B8ve.ogg) |
-| benzin | a Wikimedia Commons contributor | [Da-benzin.ogg](https://commons.wikimedia.org/wiki/File:Da-benzin.ogg) |
-| bjørn | EskildDood | [LL-Q9035 (dan)-EskildDood-bjørn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-bj%C3%B8rn.wav) |
-| blod | a Wikimedia Commons contributor | [Da-blod.ogg](https://commons.wikimedia.org/wiki/File:Da-blod.ogg) |
-| bog | EskildDood | [LL-Q9035 (dan)-EskildDood-bog.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-bog.wav) |
-| bold | a Wikimedia Commons contributor | [Da-bold.ogg](https://commons.wikimedia.org/wiki/File:Da-bold.ogg) |
-| bur | Peterleth | [LL-Q9035 (dan)-Peterleth-Bur.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Peterleth-Bur.wav) |
-| dag | EskildDood | [LL-Q9035 (dan)-EskildDood-dag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-dag.wav) |
-| dansk | a Wikimedia Commons contributor | [Da-dansk.ogg](https://commons.wikimedia.org/wiki/File:Da-dansk.ogg) |
-| dele | a Wikimedia Commons contributor | [Da-dele.ogg](https://commons.wikimedia.org/wiki/File:Da-dele.ogg) |
-| deres | a Wikimedia Commons contributor | [Da-deres.ogg](https://commons.wikimedia.org/wiki/File:Da-deres.ogg) |
-| dør | a Wikimedia Commons contributor | [Da-dør.ogg](https://commons.wikimedia.org/wiki/File:Da-d%C3%B8r.ogg) |
-| drab | Huggywuggyy | [LL-Q9035 (dan)-Huggywuggyy-drab.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-drab.wav) |
-| dreng | a Wikimedia Commons contributor | [Da-dreng.ogg](https://commons.wikimedia.org/wiki/File:Da-dreng.ogg) |
-| drømme | a Wikimedia Commons contributor | [Da-drømme.ogg](https://commons.wikimedia.org/wiki/File:Da-dr%C3%B8mme.ogg) |
-| en | EskildDood | [LL-Q9035 (dan)-EskildDood-en.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-en.wav) |
-| fælles | a Wikimedia Commons contributor | [Da-fælles.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%A6lles.ogg) |
-| fem | EskildDood | [LL-Q9035 (dan)-EskildDood-fem.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fem.wav) |
-| fire | EskildDood | [LL-Q9035 (dan)-EskildDood-fire.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fire.wav) |
-| fisk | EskildDood | [LL-Q9035 (dan)-EskildDood-fisk.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fisk.wav) |
-| føde | a Wikimedia Commons contributor | [Da-føde.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8de.ogg) |
-| fødselsdag | a Wikimedia Commons contributor | [Da-fødselsdag.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8dselsdag.ogg) |
-| føle | a Wikimedia Commons contributor | [Da-føle.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8le.ogg) |
-| forår | EskildDood | [LL-Q9035 (dan)-EskildDood-forår.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-for%C3%A5r.wav) |
-| første | a Wikimedia Commons contributor | [Da-første.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8rste.ogg) |
-| fra | a Wikimedia Commons contributor | [Da-fra.ogg](https://commons.wikimedia.org/wiki/File:Da-fra.ogg) |
-| fransk | a Wikimedia Commons contributor | [Da-fransk.ogg](https://commons.wikimedia.org/wiki/File:Da-fransk.ogg) |
-| fred | a Wikimedia Commons contributor | [Da-fred.ogg](https://commons.wikimedia.org/wiki/File:Da-fred.ogg) |
-| fredag | a Wikimedia Commons contributor | [Da-fredag.ogg](https://commons.wikimedia.org/wiki/File:Da-fredag.ogg) |
-| fremtid | a Wikimedia Commons contributor | [Da-fremtid.ogg](https://commons.wikimedia.org/wiki/File:Da-fremtid.ogg) |
-| frugt | a Wikimedia Commons contributor | [DA-frugt.ogg](https://commons.wikimedia.org/wiki/File:DA-frugt.ogg) |
-| fugl | EskildDood | [LL-Q9035 (dan)-EskildDood-fugl.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fugl.wav) |
-| gå | a Wikimedia Commons contributor | [Da-gå.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A5.ogg) |
-| gæst | a Wikimedia Commons contributor | [Da-gæst.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A6st.ogg) |
-| gætte | a Wikimedia Commons contributor | [Da-gætte.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A6tte.ogg) |
-| give | a Wikimedia Commons contributor | [Da-Give.ogg](https://commons.wikimedia.org/wiki/File:Da-Give.ogg) |
-| god | Huggywuggyy | [LL-Q9035 (dan)-Huggywuggyy-god.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-god.wav) |
-| gøre | a Wikimedia Commons contributor | [Da-gøre.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%B8re.ogg) |
-| gratis | Huggywuggyy | [LL-Q9035 (dan)-Huggywuggyy-gratis.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-gratis.wav) |
-| grøn | a Wikimedia Commons contributor | [Da-grøn.ogg](https://commons.wikimedia.org/wiki/File:Da-gr%C3%B8n.ogg) |
-| guld | EskildDood | [LL-Q9035 (dan)-EskildDood-guld.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-guld.wav) |
-| hale | a Wikimedia Commons contributor | [Da-hale.ogg](https://commons.wikimedia.org/wiki/File:Da-hale.ogg) |
-| hånd | EskildDood | [LL-Q9035 (dan)-EskildDood-hånd.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-h%C3%A5nd.wav) |
-| hej | Punsisil | [LL-Q9035 (dan)-Punsisil-Hej.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Punsisil-Hej.wav) |
-| hjerte | EskildDood | [LL-Q9035 (dan)-EskildDood-hjerte.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-hjerte.wav) |
-| hund | EskildDood | [LL-Q9035 (dan)-EskildDood-hund.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-hund.wav) |
-| jeg | EskildDood | [LL-Q9035 (dan)-EskildDood-jeg.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-jeg.wav) |
-| kærlighed | Jimblespedia | [LL-Q9035 (dan)-Jimblespedia-Kærlighed.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Jimblespedia-K%C3%A6rlighed.wav) |
-| kat | a Wikimedia Commons contributor | [Da-kat.ogg](https://commons.wikimedia.org/wiki/File:Da-kat.ogg) |
-| kød | a Wikimedia Commons contributor | [Da-kød.ogg](https://commons.wikimedia.org/wiki/File:Da-k%C3%B8d.ogg) |
-| kort | a Wikimedia Commons contributor | [Da-kort.ogg](https://commons.wikimedia.org/wiki/File:Da-kort.ogg) |
-| lig | a Wikimedia Commons contributor | [Da-lig.ogg](https://commons.wikimedia.org/wiki/File:Da-lig.ogg) |
-| lørdag | EskildDood | [LL-Q9035 (dan)-EskildDood-lørdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-l%C3%B8rdag.wav) |
-| mad | a Wikimedia Commons contributor | [Da-mad.ogg](https://commons.wikimedia.org/wiki/File:Da-mad.ogg) |
-| mælk | EskildDood | [LL-Q9035 (dan)-EskildDood-mælk.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-m%C3%A6lk.wav) |
-| male | a Wikimedia Commons contributor | [Da-male.ogg](https://commons.wikimedia.org/wiki/File:Da-male.ogg) |
-| mand | EskildDood | [LL-Q9035 (dan)-EskildDood-mand.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-mand.wav) |
-| mandag | EskildDood | [LL-Q9035 (dan)-EskildDood-mandag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-mandag.wav) |
-| metode | a Wikimedia Commons contributor | [Da-metode.ogg](https://commons.wikimedia.org/wiki/File:Da-metode.ogg) |
-| ni | EskildDood | [LL-Q9035 (dan)-EskildDood-ni.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-ni.wav) |
-| ødelægge | a Wikimedia Commons contributor | [Da-ødelægge.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8del%C3%A6gge.ogg) |
-| og | EskildDood | [LL-Q9035 (dan)-EskildDood-og.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-og.wav) |
-| øje | a Wikimedia Commons contributor | [Da-øje.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8je.ogg) |
-| øjeblik | a Wikimedia Commons contributor | [Da-øjeblik.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8jeblik.ogg) |
-| økonomi | a Wikimedia Commons contributor | [Da-økonomi.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8konomi.ogg) |
-| øl | a Wikimedia Commons contributor | [Da-øl.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8l.ogg) |
-| onsdag | EskildDood | [LL-Q9035 (dan)-EskildDood-onsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-onsdag.wav) |
-| ønske | a Wikimedia Commons contributor | [Da-ønske.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8nske.ogg) |
-| otte | EskildDood | [LL-Q9035 (dan)-EskildDood-otte.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-otte.wav) |
-| regn | Troe2339 | [LL-Q9035 (dan)-Troe2339-regn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Troe2339-regn.wav) |
-| sang | a Wikimedia Commons contributor | [Da-sang.ogg](https://commons.wikimedia.org/wiki/File:Da-sang.ogg) |
-| sår | a Wikimedia Commons contributor | [Da-sår.ogg](https://commons.wikimedia.org/wiki/File:Da-s%C3%A5r.ogg) |
-| ske | a Wikimedia Commons contributor | [Da-ske.ogg](https://commons.wikimedia.org/wiki/File:Da-ske.ogg) |
-| skole | a Wikimedia Commons contributor | [Da-skole.ogg](https://commons.wikimedia.org/wiki/File:Da-skole.ogg) |
-| smile | a Wikimedia Commons contributor | [Da-smile.ogg](https://commons.wikimedia.org/wiki/File:Da-smile.ogg) |
-| sne | EskildDood | [LL-Q9035 (dan)-EskildDood-sne.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sne.wav) |
-| sommer | EskildDood | [LL-Q9035 (dan)-EskildDood-sommer.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sommer.wav) |
-| søndag | EskildDood | [LL-Q9035 (dan)-EskildDood-søndag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-s%C3%B8ndag.wav) |
-| spise | a Wikimedia Commons contributor | [Da-spise.ogg](https://commons.wikimedia.org/wiki/File:Da-spise.ogg) |
-| spørge | a Wikimedia Commons contributor | [Da-spørge.ogg](https://commons.wikimedia.org/wiki/File:Da-sp%C3%B8rge.ogg) |
-| sprog | EskildDood | [LL-Q9035 (dan)-EskildDood-sprog.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sprog.wav) |
-| syv | EskildDood | [LL-Q9035 (dan)-EskildDood-syv.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-syv.wav) |
-| ti | EskildDood | [LL-Q9035 (dan)-EskildDood-ti.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-ti.wav) |
-| tirsdag | EskildDood | [LL-Q9035 (dan)-EskildDood-tirsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tirsdag.wav) |
-| to | EskildDood | [LL-Q9035 (dan)-EskildDood-to.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-to.wav) |
-| torsdag | EskildDood | [LL-Q9035 (dan)-EskildDood-torsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-torsdag.wav) |
-| træ | EskildDood | [LL-Q9035 (dan)-EskildDood-træ.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tr%C3%A6.wav) |
-| tre | EskildDood | [LL-Q9035 (dan)-EskildDood-tre.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tre.wav) |
-| uge | EskildDood | [LL-Q9035 (dan)-EskildDood-uge.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-uge.wav) |
-| vand | a Wikimedia Commons contributor | [Da-vand.ogg](https://commons.wikimedia.org/wiki/File:Da-vand.ogg) |
-| vindue | a Wikimedia Commons contributor | [Da-vindue.ogg](https://commons.wikimedia.org/wiki/File:Da-vindue.ogg) |
-
-### Sentences (Tatoeba)
-
-Recorded by Tatoeba contributors under the licence shown (CC BY-NC-ND 3.0, CC BY-NC 4.0, CC BY 4.0 or CC BY-SA 4.0). The NC and ND licences allow sharing the unmodified clips, with credit, for non-commercial use. They are kept unmodified.
-
-| Sentence | Speaker | Licence |
-|---|---|---|
-| [430097](https://tatoeba.org/en/sentences/show/430097) | krystof | CC BY-NC 4.0 |
-| [484845](https://tatoeba.org/en/sentences/show/484845) | moskytoo | CC BY-NC 4.0 |
-| [484847](https://tatoeba.org/en/sentences/show/484847) | moskytoo | CC BY-NC 4.0 |
-| [484848](https://tatoeba.org/en/sentences/show/484848) | moskytoo | CC BY-NC 4.0 |
-| [484849](https://tatoeba.org/en/sentences/show/484849) | moskytoo | CC BY-NC 4.0 |
-| [484851](https://tatoeba.org/en/sentences/show/484851) | moskytoo | CC BY-NC 4.0 |
-| [484855](https://tatoeba.org/en/sentences/show/484855) | moskytoo | CC BY-NC 4.0 |
-| [551610](https://tatoeba.org/en/sentences/show/551610) | arh | CC BY-NC-ND 3.0 |
-| [551615](https://tatoeba.org/en/sentences/show/551615) | arh | CC BY-NC-ND 3.0 |
-| [551655](https://tatoeba.org/en/sentences/show/551655) | arh | CC BY-NC-ND 3.0 |
-| [551710](https://tatoeba.org/en/sentences/show/551710) | arh | CC BY-NC-ND 3.0 |
-| [551732](https://tatoeba.org/en/sentences/show/551732) | arh | CC BY-NC-ND 3.0 |
-| [551745](https://tatoeba.org/en/sentences/show/551745) | arh | CC BY-NC-ND 3.0 |
-| [551750](https://tatoeba.org/en/sentences/show/551750) | arh | CC BY-NC-ND 3.0 |
-| [551779](https://tatoeba.org/en/sentences/show/551779) | arh | CC BY-NC-ND 3.0 |
-| [551790](https://tatoeba.org/en/sentences/show/551790) | arh | CC BY-NC-ND 3.0 |
-| [551798](https://tatoeba.org/en/sentences/show/551798) | arh | CC BY-NC-ND 3.0 |
-| [551799](https://tatoeba.org/en/sentences/show/551799) | arh | CC BY-NC-ND 3.0 |
-| [551800](https://tatoeba.org/en/sentences/show/551800) | arh | CC BY-NC-ND 3.0 |
-| [551813](https://tatoeba.org/en/sentences/show/551813) | arh | CC BY-NC-ND 3.0 |
-| [551817](https://tatoeba.org/en/sentences/show/551817) | arh | CC BY-NC-ND 3.0 |
-| [551848](https://tatoeba.org/en/sentences/show/551848) | arh | CC BY-NC-ND 3.0 |
-| [551851](https://tatoeba.org/en/sentences/show/551851) | arh | CC BY-NC-ND 3.0 |
-| [551860](https://tatoeba.org/en/sentences/show/551860) | arh | CC BY-NC-ND 3.0 |
-| [551864](https://tatoeba.org/en/sentences/show/551864) | arh | CC BY-NC-ND 3.0 |
-| [551875](https://tatoeba.org/en/sentences/show/551875) | arh | CC BY-NC-ND 3.0 |
-| [551885](https://tatoeba.org/en/sentences/show/551885) | arh | CC BY-NC-ND 3.0 |
-| [592949](https://tatoeba.org/en/sentences/show/592949) | driini | CC BY-NC 4.0 |
-| [592953](https://tatoeba.org/en/sentences/show/592953) | driini | CC BY-NC 4.0 |
-| [592960](https://tatoeba.org/en/sentences/show/592960) | driini | CC BY-NC 4.0 |
-| [594180](https://tatoeba.org/en/sentences/show/594180) | arh | CC BY-NC-ND 3.0 |
-| [594185](https://tatoeba.org/en/sentences/show/594185) | arh | CC BY-NC-ND 3.0 |
-| [594188](https://tatoeba.org/en/sentences/show/594188) | arh | CC BY-NC-ND 3.0 |
-| [594238](https://tatoeba.org/en/sentences/show/594238) | arh | CC BY-NC-ND 3.0 |
-| [594241](https://tatoeba.org/en/sentences/show/594241) | arh | CC BY-NC-ND 3.0 |
-| [594242](https://tatoeba.org/en/sentences/show/594242) | arh | CC BY-NC-ND 3.0 |
-| [594253](https://tatoeba.org/en/sentences/show/594253) | arh | CC BY-NC-ND 3.0 |
-| [594256](https://tatoeba.org/en/sentences/show/594256) | arh | CC BY-NC-ND 3.0 |
-| [594260](https://tatoeba.org/en/sentences/show/594260) | arh | CC BY-NC-ND 3.0 |
-| [594272](https://tatoeba.org/en/sentences/show/594272) | arh | CC BY-NC-ND 3.0 |
-| [594300](https://tatoeba.org/en/sentences/show/594300) | arh | CC BY-NC-ND 3.0 |
-| [594319](https://tatoeba.org/en/sentences/show/594319) | arh | CC BY-NC-ND 3.0 |
-| [688832](https://tatoeba.org/en/sentences/show/688832) | arh | CC BY-NC-ND 3.0 |
-| [688867](https://tatoeba.org/en/sentences/show/688867) | arh | CC BY-NC-ND 3.0 |
-| [688869](https://tatoeba.org/en/sentences/show/688869) | arh | CC BY-NC-ND 3.0 |
-| [688919](https://tatoeba.org/en/sentences/show/688919) | arh | CC BY-NC-ND 3.0 |
-| [688922](https://tatoeba.org/en/sentences/show/688922) | arh | CC BY-NC-ND 3.0 |
-| [688935](https://tatoeba.org/en/sentences/show/688935) | arh | CC BY-NC-ND 3.0 |
-| [688938](https://tatoeba.org/en/sentences/show/688938) | arh | CC BY-NC-ND 3.0 |
-| [688987](https://tatoeba.org/en/sentences/show/688987) | arh | CC BY-NC-ND 3.0 |
-| [689001](https://tatoeba.org/en/sentences/show/689001) | arh | CC BY-NC-ND 3.0 |
-| [689004](https://tatoeba.org/en/sentences/show/689004) | arh | CC BY-NC-ND 3.0 |
-| [691836](https://tatoeba.org/en/sentences/show/691836) | arh | CC BY-NC-ND 3.0 |
-| [692316](https://tatoeba.org/en/sentences/show/692316) | arh | CC BY-NC-ND 3.0 |
-| [692363](https://tatoeba.org/en/sentences/show/692363) | arh | CC BY-NC-ND 3.0 |
-| [692420](https://tatoeba.org/en/sentences/show/692420) | arh | CC BY-NC-ND 3.0 |
-| [692516](https://tatoeba.org/en/sentences/show/692516) | arh | CC BY-NC-ND 3.0 |
-| [692557](https://tatoeba.org/en/sentences/show/692557) | arh | CC BY-NC-ND 3.0 |
-| [692594](https://tatoeba.org/en/sentences/show/692594) | arh | CC BY-NC-ND 3.0 |
-| [692659](https://tatoeba.org/en/sentences/show/692659) | arh | CC BY-NC-ND 3.0 |
-| [695522](https://tatoeba.org/en/sentences/show/695522) | driini | CC BY-NC 4.0 |
-| [697225](https://tatoeba.org/en/sentences/show/697225) | RB | CC BY-NC 4.0 |
-| [697227](https://tatoeba.org/en/sentences/show/697227) | RB | CC BY-NC 4.0 |
-| [706608](https://tatoeba.org/en/sentences/show/706608) | arh | CC BY-NC-ND 3.0 |
-| [706610](https://tatoeba.org/en/sentences/show/706610) | arh | CC BY-NC-ND 3.0 |
-| [706647](https://tatoeba.org/en/sentences/show/706647) | arh | CC BY-NC-ND 3.0 |
-| [706649](https://tatoeba.org/en/sentences/show/706649) | arh | CC BY-NC-ND 3.0 |
-| [706676](https://tatoeba.org/en/sentences/show/706676) | arh | CC BY-NC-ND 3.0 |
-| [707507](https://tatoeba.org/en/sentences/show/707507) | arh | CC BY-NC-ND 3.0 |
-| [707508](https://tatoeba.org/en/sentences/show/707508) | arh | CC BY-NC-ND 3.0 |
-| [707826](https://tatoeba.org/en/sentences/show/707826) | arh | CC BY-NC-ND 3.0 |
-| [707827](https://tatoeba.org/en/sentences/show/707827) | arh | CC BY-NC-ND 3.0 |
-| [707831](https://tatoeba.org/en/sentences/show/707831) | arh | CC BY-NC-ND 3.0 |
-| [707833](https://tatoeba.org/en/sentences/show/707833) | arh | CC BY-NC-ND 3.0 |
-| [707834](https://tatoeba.org/en/sentences/show/707834) | arh | CC BY-NC-ND 3.0 |
-| [707837](https://tatoeba.org/en/sentences/show/707837) | arh | CC BY-NC-ND 3.0 |
-| [707839](https://tatoeba.org/en/sentences/show/707839) | arh | CC BY-NC-ND 3.0 |
-| [707840](https://tatoeba.org/en/sentences/show/707840) | arh | CC BY-NC-ND 3.0 |
-| [707841](https://tatoeba.org/en/sentences/show/707841) | arh | CC BY-NC-ND 3.0 |
-| [707848](https://tatoeba.org/en/sentences/show/707848) | arh | CC BY-NC-ND 3.0 |
-| [707850](https://tatoeba.org/en/sentences/show/707850) | arh | CC BY-NC-ND 3.0 |
-| [731307](https://tatoeba.org/en/sentences/show/731307) | arh | CC BY-NC-ND 3.0 |
-| [731347](https://tatoeba.org/en/sentences/show/731347) | arh | CC BY-NC-ND 3.0 |
-| [731350](https://tatoeba.org/en/sentences/show/731350) | arh | CC BY-NC-ND 3.0 |
-| [745094](https://tatoeba.org/en/sentences/show/745094) | MisterTrouser | CC BY 4.0 |
-| [945389](https://tatoeba.org/en/sentences/show/945389) | tokzyk | CC BY-NC-ND 3.0 |
-| [945392](https://tatoeba.org/en/sentences/show/945392) | tokzyk | CC BY-NC-ND 3.0 |
-| [945405](https://tatoeba.org/en/sentences/show/945405) | tokzyk | CC BY-NC-ND 3.0 |
-| [945409](https://tatoeba.org/en/sentences/show/945409) | tokzyk | CC BY-NC-ND 3.0 |
-| [945411](https://tatoeba.org/en/sentences/show/945411) | tokzyk | CC BY-NC-ND 3.0 |
-| [945434](https://tatoeba.org/en/sentences/show/945434) | tokzyk | CC BY-NC-ND 3.0 |
-| [1123747](https://tatoeba.org/en/sentences/show/1123747) | Them | CC BY 4.0 |
-| [1123748](https://tatoeba.org/en/sentences/show/1123748) | Them | CC BY 4.0 |
-| [1191186](https://tatoeba.org/en/sentences/show/1191186) | PaulP | CC BY-NC 4.0 |
-| [1204417](https://tatoeba.org/en/sentences/show/1204417) | PaulP | CC BY-NC 4.0 |
-| [1278143](https://tatoeba.org/en/sentences/show/1278143) | amychang | CC BY 4.0 |
-| [1278144](https://tatoeba.org/en/sentences/show/1278144) | amychang | CC BY 4.0 |
+| Word | Speaker | Licence | Source file |
+|---|---|---|---|
+| æble | a Wikimedia Commons contributor | Public domain | [Da-æble.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6ble.ogg) |
+| æg | a Wikimedia Commons contributor | Public domain | [Da-æg.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6g.ogg) |
+| ægteskab | a Wikimedia Commons contributor | Public domain | [Da-ægteskab.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6gteskab.ogg) |
+| ærlig | a Wikimedia Commons contributor | Public domain | [Da-ærlig.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%A6rlig.ogg) |
+| ah | Huggywuggyy | CC0 | [LL-Q9035 (dan)-Huggywuggyy-ah.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-ah.wav) |
+| andel | Huggywuggyy | CC0 | [LL-Q9035 (dan)-Huggywuggyy-andel.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-andel.wav) |
+| barn | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-barn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-barn.wav) |
+| behandling | Kip (Nordjylland) | CC BY 4.0 | [Da-behandling.ogg](https://commons.wikimedia.org/wiki/File:Da-behandling.ogg) |
+| behøve | Kip (Nordjylland) | CC BY 4.0 | [Da-behøve.ogg](https://commons.wikimedia.org/wiki/File:Da-beh%C3%B8ve.ogg) |
+| benzin | a Wikimedia Commons contributor | Public domain | [Da-benzin.ogg](https://commons.wikimedia.org/wiki/File:Da-benzin.ogg) |
+| bjørn | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-bjørn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-bj%C3%B8rn.wav) |
+| blod | a Wikimedia Commons contributor | Public domain | [Da-blod.ogg](https://commons.wikimedia.org/wiki/File:Da-blod.ogg) |
+| bog | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-bog.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-bog.wav) |
+| bold | Kip (Nordjylland) | CC BY 4.0 | [Da-bold.ogg](https://commons.wikimedia.org/wiki/File:Da-bold.ogg) |
+| bur | Peterleth | CC0 | [LL-Q9035 (dan)-Peterleth-Bur.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Peterleth-Bur.wav) |
+| dag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-dag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-dag.wav) |
+| dansk | a Wikimedia Commons contributor | CC BY-SA 3.0 | [Da-dansk.ogg](https://commons.wikimedia.org/wiki/File:Da-dansk.ogg) |
+| dele | a Wikimedia Commons contributor | Public domain | [Da-dele.ogg](https://commons.wikimedia.org/wiki/File:Da-dele.ogg) |
+| deres | Kip (Nordjylland) | CC BY 4.0 | [Da-deres.ogg](https://commons.wikimedia.org/wiki/File:Da-deres.ogg) |
+| dør | a Wikimedia Commons contributor | Public domain | [Da-dør.ogg](https://commons.wikimedia.org/wiki/File:Da-d%C3%B8r.ogg) |
+| drab | Huggywuggyy | CC0 | [LL-Q9035 (dan)-Huggywuggyy-drab.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-drab.wav) |
+| dreng | Kip (talk) | Public domain | [Da-dreng.ogg](https://commons.wikimedia.org/wiki/File:Da-dreng.ogg) |
+| drømme | a Wikimedia Commons contributor | Public domain | [Da-drømme.ogg](https://commons.wikimedia.org/wiki/File:Da-dr%C3%B8mme.ogg) |
+| en | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-en.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-en.wav) |
+| fælles | a Wikimedia Commons contributor | Public domain | [Da-fælles.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%A6lles.ogg) |
+| fem | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-fem.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fem.wav) |
+| fire | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-fire.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fire.wav) |
+| fisk | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-fisk.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fisk.wav) |
+| føde | a Wikimedia Commons contributor | Public domain | [Da-føde.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8de.ogg) |
+| fødselsdag | a Wikimedia Commons contributor | Public domain | [Da-fødselsdag.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8dselsdag.ogg) |
+| føle | a Wikimedia Commons contributor | Public domain | [Da-føle.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8le.ogg) |
+| forår | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-forår.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-for%C3%A5r.wav) |
+| første | a Wikimedia Commons contributor | Public domain | [Da-første.ogg](https://commons.wikimedia.org/wiki/File:Da-f%C3%B8rste.ogg) |
+| fra | a Wikimedia Commons contributor | Public domain | [Da-fra.ogg](https://commons.wikimedia.org/wiki/File:Da-fra.ogg) |
+| fransk | a Wikimedia Commons contributor | Public domain | [Da-fransk.ogg](https://commons.wikimedia.org/wiki/File:Da-fransk.ogg) |
+| fred | a Wikimedia Commons contributor | Public domain | [Da-fred.ogg](https://commons.wikimedia.org/wiki/File:Da-fred.ogg) |
+| fredag | a Wikimedia Commons contributor | Public domain | [Da-fredag.ogg](https://commons.wikimedia.org/wiki/File:Da-fredag.ogg) |
+| fremtid | a Wikimedia Commons contributor | Public domain | [Da-fremtid.ogg](https://commons.wikimedia.org/wiki/File:Da-fremtid.ogg) |
+| frugt | Lennart.larsen | Public domain | [DA-frugt.ogg](https://commons.wikimedia.org/wiki/File:DA-frugt.ogg) |
+| fugl | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-fugl.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-fugl.wav) |
+| gå | a Wikimedia Commons contributor | Public domain | [Da-gå.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A5.ogg) |
+| gæst | a Wikimedia Commons contributor | Public domain | [Da-gæst.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A6st.ogg) |
+| gætte | a Wikimedia Commons contributor | Public domain | [Da-gætte.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%A6tte.ogg) |
+| give | Mojnsen | CC BY 4.0 | [Da-Give.ogg](https://commons.wikimedia.org/wiki/File:Da-Give.ogg) |
+| god | Huggywuggyy | CC0 | [LL-Q9035 (dan)-Huggywuggyy-god.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-god.wav) |
+| gøre | a Wikimedia Commons contributor | Public domain | [Da-gøre.ogg](https://commons.wikimedia.org/wiki/File:Da-g%C3%B8re.ogg) |
+| gratis | Huggywuggyy | CC0 | [LL-Q9035 (dan)-Huggywuggyy-gratis.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Huggywuggyy-gratis.wav) |
+| grøn | Kip (Nordjylland) | CC BY 4.0 | [Da-grøn.ogg](https://commons.wikimedia.org/wiki/File:Da-gr%C3%B8n.ogg) |
+| guld | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-guld.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-guld.wav) |
+| hale | Kip (talk) | Public domain | [Da-hale.ogg](https://commons.wikimedia.org/wiki/File:Da-hale.ogg) |
+| hånd | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-hånd.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-h%C3%A5nd.wav) |
+| hej | Punsisil | CC BY-SA 4.0 | [LL-Q9035 (dan)-Punsisil-Hej.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Punsisil-Hej.wav) |
+| hjerte | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-hjerte.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-hjerte.wav) |
+| hund | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-hund.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-hund.wav) |
+| jeg | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-jeg.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-jeg.wav) |
+| kærlighed | Jimblespedia | CC0 | [LL-Q9035 (dan)-Jimblespedia-Kærlighed.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Jimblespedia-K%C3%A6rlighed.wav) |
+| kat | a Wikimedia Commons contributor | Public domain | [Da-kat.ogg](https://commons.wikimedia.org/wiki/File:Da-kat.ogg) |
+| kød | a Wikimedia Commons contributor | Public domain | [Da-kød.ogg](https://commons.wikimedia.org/wiki/File:Da-k%C3%B8d.ogg) |
+| kort | a Wikimedia Commons contributor | Public domain | [Da-kort.ogg](https://commons.wikimedia.org/wiki/File:Da-kort.ogg) |
+| lig | a Wikimedia Commons contributor | Public domain | [Da-lig.ogg](https://commons.wikimedia.org/wiki/File:Da-lig.ogg) |
+| lørdag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-lørdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-l%C3%B8rdag.wav) |
+| mad | a Wikimedia Commons contributor | Public domain | [Da-mad.ogg](https://commons.wikimedia.org/wiki/File:Da-mad.ogg) |
+| mælk | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-mælk.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-m%C3%A6lk.wav) |
+| male | a Wikimedia Commons contributor | Public domain | [Da-male.ogg](https://commons.wikimedia.org/wiki/File:Da-male.ogg) |
+| mand | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-mand.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-mand.wav) |
+| mandag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-mandag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-mandag.wav) |
+| metode | Kip (Nordjylland) | CC BY 4.0 | [Da-metode.ogg](https://commons.wikimedia.org/wiki/File:Da-metode.ogg) |
+| ni | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-ni.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-ni.wav) |
+| ødelægge | a Wikimedia Commons contributor | Public domain | [Da-ødelægge.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8del%C3%A6gge.ogg) |
+| og | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-og.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-og.wav) |
+| øje | a Wikimedia Commons contributor | Public domain | [Da-øje.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8je.ogg) |
+| øjeblik | a Wikimedia Commons contributor | Public domain | [Da-øjeblik.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8jeblik.ogg) |
+| økonomi | a Wikimedia Commons contributor | Public domain | [Da-økonomi.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8konomi.ogg) |
+| øl | a Wikimedia Commons contributor | Public domain | [Da-øl.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8l.ogg) |
+| onsdag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-onsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-onsdag.wav) |
+| ønske | a Wikimedia Commons contributor | Public domain | [Da-ønske.ogg](https://commons.wikimedia.org/wiki/File:Da-%C3%B8nske.ogg) |
+| otte | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-otte.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-otte.wav) |
+| pris | Nielsheur | CC BY-SA 3.0 | [da-dk-pris.ogg](https://commons.wikimedia.org/wiki/File:da-dk-pris.ogg) |
+| regn | Troe2339 | CC BY-SA 4.0 | [LL-Q9035 (dan)-Troe2339-regn.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-Troe2339-regn.wav) |
+| sang | a Wikimedia Commons contributor | Public domain | [Da-sang.ogg](https://commons.wikimedia.org/wiki/File:Da-sang.ogg) |
+| sår | a Wikimedia Commons contributor | Public domain | [Da-sår.ogg](https://commons.wikimedia.org/wiki/File:Da-s%C3%A5r.ogg) |
+| ske | a Wikimedia Commons contributor | Public domain | [Da-ske.ogg](https://commons.wikimedia.org/wiki/File:Da-ske.ogg) |
+| skole | a Wikimedia Commons contributor | Public domain | [Da-skole.ogg](https://commons.wikimedia.org/wiki/File:Da-skole.ogg) |
+| smile | a Wikimedia Commons contributor | Public domain | [Da-smile.ogg](https://commons.wikimedia.org/wiki/File:Da-smile.ogg) |
+| sne | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-sne.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sne.wav) |
+| sommer | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-sommer.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sommer.wav) |
+| søndag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-søndag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-s%C3%B8ndag.wav) |
+| spise | a Wikimedia Commons contributor | Public domain | [Da-spise.ogg](https://commons.wikimedia.org/wiki/File:Da-spise.ogg) |
+| spørge | Kip (Nordjylland) | CC BY 4.0 | [Da-spørge.ogg](https://commons.wikimedia.org/wiki/File:Da-sp%C3%B8rge.ogg) |
+| sprog | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-sprog.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-sprog.wav) |
+| syv | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-syv.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-syv.wav) |
+| ti | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-ti.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-ti.wav) |
+| tirsdag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-tirsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tirsdag.wav) |
+| to | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-to.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-to.wav) |
+| torsdag | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-torsdag.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-torsdag.wav) |
+| træ | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-træ.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tr%C3%A6.wav) |
+| tre | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-tre.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-tre.wav) |
+| uge | EskildDood | CC0 | [LL-Q9035 (dan)-EskildDood-uge.wav](https://commons.wikimedia.org/wiki/File:LL-Q9035_(dan)-EskildDood-uge.wav) |
+| vand | a Wikimedia Commons contributor | Public domain | [Da-vand.ogg](https://commons.wikimedia.org/wiki/File:Da-vand.ogg) |
+| vindue | a Wikimedia Commons contributor | Public domain | [Da-vindue.ogg](https://commons.wikimedia.org/wiki/File:Da-vindue.ogg) |
 
 ## Computer voice
 
-2561 word clips and 2873 sentence clips are made with [Piper](https://github.com/OHF-Voice/piper1-gpl) (MIT/GPL, text-to-speech) using the Danish voice [da_DK-talesyntese-medium](https://huggingface.co/rhasspy/piper-voices/tree/main/da/da_DK/talesyntese/medium), trained on a recording set from the Norwegian National Library (Språkbanken), CC0. These clips are a machine voice, and the app says so.
-
-## Not used on purpose
-
-Tatoeba recordings by one contributor who recorded thousands of sentences in languages they do not speak are left out, because they may not be recordings by a native speaker.
+2569 word clips and 3034 sentence clips are made with [Piper](https://github.com/OHF-Voice/piper1-gpl) (text-to-speech) using the Danish voice [da_DK-talesyntese-medium](https://huggingface.co/rhasspy/piper-voices/tree/main/da/da_DK/talesyntese/medium), trained on a recording set from the Norwegian National Library (Språkbanken), CC0. These clips are a machine voice, and the app says so.

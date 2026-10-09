@@ -2,8 +2,8 @@
 //
 //   node build/audio-plan.mjs && node build/fetch-audio.mjs
 //
-// Words: Wikimedia Commons (Lingua Libre and older files). Sentences: Tatoeba recordings that still answer.
-// Clips are named by a hash of the word, or by the Tatoeba sentence id, never by the word's rank, so a deck
+// Words only: Wikimedia Commons (Lingua Libre and older files). There are no usable recordings of whole sentences.
+// Clips are named by a hash of the word, never by the word's rank, so a deck
 // that is rebuilt in a different order cannot point a clip at the wrong word. app/data/audio-human.json records, for
 // each clip, who made it, where it came from and under what licence. Files already on disk are kept, so this
 // can be stopped and run again.
@@ -27,8 +27,7 @@ export const hash = (t) => createHash('md5').update(t.toLowerCase()).digest('hex
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const jobs = [];
-for (const w of plan.words) { const text = deck.words[w.i].w; jobs.push({ kind: 'w', key: text.toLowerCase(), urls: [[w.url, 'mp3'], [w.orig, /\.(ogg|oga)$/i.test(w.f) ? 'ogg' : null]].filter((u) => u[1]), name: `w-${hash(text)}`, meta: { by: w.by, src: w.src, file: w.f } }); }
-for (const s of plan.sentences) jobs.push({ kind: 's', key: String(s.id), urls: [[`https://tatoeba.org/en/audio/download/${s.aid}`, 'mp3']], name: `s-${s.id}`, meta: { by: s.by, src: 'Tatoeba', lic: s.lic } });
+for (const w of plan.words) { const text = deck.words[w.i].w; jobs.push({ kind: 'w', key: text.toLowerCase(), urls: [[w.url, 'mp3'], [w.orig, /\.(ogg|oga)$/i.test(w.f) ? 'ogg' : null]].filter((u) => u[1]), name: `w-${hash(text)}`, meta: { by: w.by, src: w.src, lic: w.lic, file: w.f } }); }
 
 let pausedUntil = 0, done = 0;
 const failed = [];
@@ -63,4 +62,4 @@ const worker = async () => {
 };
 await Promise.all(Array.from({ length: 3 }, worker));
 writeFileSync(MAN, JSON.stringify(man));
-console.log(`recordings by real people: ${Object.keys(man.w).length} words, ${Object.keys(man.s).length} sentences; ${failed.length} failed${failed.length ? ': ' + failed.slice(0, 8).join(', ') : ''}`);
+console.log(`recordings by real people: ${Object.keys(man.w).length} words; ${failed.length} failed${failed.length ? ': ' + failed.slice(0, 8).join(', ') : ''}`);
